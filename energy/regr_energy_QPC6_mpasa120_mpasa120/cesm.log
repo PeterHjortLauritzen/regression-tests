@@ -1,0 +1,1783 @@
+0: User-specified PIO rearranger comm max pend req (comp2io),            0 
+0:  (value will be reset as requested) 
+0: Resetting PIO rearranger comm max pend req (comp2io) to           64
+0: PIO rearranger options:
+0:   comm type     = p2p
+0:   comm fcd      = 2denable
+0:   max pend req (comp2io)  =           64
+0:   enable_hs (comp2io)     =  T
+0:   enable_isend (comp2io)  =  F
+0:   max pend req (io2comp)  =           64
+0:   enable_hs (io2comp)    =  F
+0:   enable_isend (io2comp)  =  T
+0:(seq_comm_setcomm)  init ID (  1 GLOBAL          ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_setcomm)  init ID (  2 CPL             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_setcomm)  init ID (  5 ATM             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID (  6 CPLATM          ) join IDs =     2     5       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID (  3 ALLATMID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID (  4 CPLALLATMID     ) join IDs =     2     3       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID (  9 LND             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 10 CPLLND          ) join IDs =     2     9       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID (  7 ALLLNDID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID (  8 CPLALLLNDID     ) join IDs =     2     7       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 13 ICE             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 14 CPLICE          ) join IDs =     2    13       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 11 ALLICEID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 12 CPLALLICEID     ) join IDs =     2    11       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 17 OCN             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 18 CPLOCN          ) join IDs =     2    17       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 15 ALLOCNID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 16 CPLALLOCNID     ) join IDs =     2    15       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 21 ROF             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 22 CPLROF          ) join IDs =     2    21       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 19 ALLROFID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 20 CPLALLROFID     ) join IDs =     2    19       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 25 GLC             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 26 CPLGLC          ) join IDs =     2    25       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 23 ALLGLCID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 24 CPLALLGLCID     ) join IDs =     2    23       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 29 WAV             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 30 CPLWAV          ) join IDs =     2    29       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 27 ALLWAVID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 28 CPLALLWAVID     ) join IDs =     2    27       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 33 ESP             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 34 CPLESP          ) join IDs =     2    33       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 31 ALLESPID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 32 CPLALLESPID     ) join IDs =     2    31       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_setcomm)  init ID ( 37 IAC             ) pelist   =     0    35     1 ( npes =    36) ( nthreads =  1)( suffix =)
+0:(seq_comm_joincomm) init ID ( 38 CPLIAC          ) join IDs =     2    37       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_jcommarr) init ID ( 35 ALLIACID        ) join multiple comp IDs       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_joincomm) init ID ( 36 CPLALLIACID     ) join IDs =     2    35       ( npes =    36) ( nthreads =  1)
+0:(seq_comm_printcomms)     1     0    36     1  GLOBAL:
+0:(seq_comm_printcomms)     2     0    36     1  CPL:
+0:(seq_comm_printcomms)     3     0    36     1  ALLATMID:
+0:(seq_comm_printcomms)     4     0    36     1  CPLALLATMID:
+0:(seq_comm_printcomms)     5     0    36     1  ATM:
+0:(seq_comm_printcomms)     6     0    36     1  CPLATM:
+0:(seq_comm_printcomms)     7     0    36     1  ALLLNDID:
+0:(seq_comm_printcomms)     8     0    36     1  CPLALLLNDID:
+0:(seq_comm_printcomms)     9     0    36     1  LND:
+0:(seq_comm_printcomms)    10     0    36     1  CPLLND:
+0:(seq_comm_printcomms)    11     0    36     1  ALLICEID:
+0:(seq_comm_printcomms)    12     0    36     1  CPLALLICEID:
+0:(seq_comm_printcomms)    13     0    36     1  ICE:
+0:(seq_comm_printcomms)    14     0    36     1  CPLICE:
+0:(seq_comm_printcomms)    15     0    36     1  ALLOCNID:
+0:(seq_comm_printcomms)    16     0    36     1  CPLALLOCNID:
+0:(seq_comm_printcomms)    17     0    36     1  OCN:
+0:(seq_comm_printcomms)    18     0    36     1  CPLOCN:
+0:(seq_comm_printcomms)    19     0    36     1  ALLROFID:
+0:(seq_comm_printcomms)    20     0    36     1  CPLALLROFID:
+0:(seq_comm_printcomms)    21     0    36     1  ROF:
+0:(seq_comm_printcomms)    22     0    36     1  CPLROF:
+0:(seq_comm_printcomms)    23     0    36     1  ALLGLCID:
+0:(seq_comm_printcomms)    24     0    36     1  CPLALLGLCID:
+0:(seq_comm_printcomms)    25     0    36     1  GLC:
+0:(seq_comm_printcomms)    26     0    36     1  CPLGLC:
+0:(seq_comm_printcomms)    27     0    36     1  ALLWAVID:
+0:(seq_comm_printcomms)    28     0    36     1  CPLALLWAVID:
+0:(seq_comm_printcomms)    29     0    36     1  WAV:
+0:(seq_comm_printcomms)    30     0    36     1  CPLWAV:
+0:(seq_comm_printcomms)    31     0    36     1  ALLESPID:
+0:(seq_comm_printcomms)    32     0    36     1  CPLALLESPID:
+0:(seq_comm_printcomms)    33     0    36     1  ESP:
+0:(seq_comm_printcomms)    34     0    36     1  CPLESP:
+0:(seq_comm_printcomms)    35     0    36     1  ALLIACID:
+0:(seq_comm_printcomms)    36     0    36     1  CPLALLIACID:
+0:(seq_comm_printcomms)    37     0    36     1  IAC:
+0:(seq_comm_printcomms)    38     0    36     1  CPLIAC:
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+1: Setting mpi info: ibm_largeblock_io=true
+0: (t_initf) Read in prof_inparm namelist from: drv_in
+0: (t_initf) Using profile_disable=          F
+0: (t_initf)       profile_timer=                      4
+0: (t_initf)       profile_depth_limit=               10
+0: (t_initf)       profile_detail_limit=               2
+0: (t_initf)       profile_barrier=          F
+0: (t_initf)       profile_outpe_num=                  1
+0: (t_initf)       profile_outpe_stride=               0
+0: (t_initf)       profile_single_file=      F
+0: (t_initf)       profile_global_stats=     T
+0: (t_initf)       profile_ovhd_measurement= F
+0: (t_initf)       profile_add_detail=       F
+0: (t_initf)       profile_papi_enable=      F
+0:          36 pes participating in computation
+0: -----------------------------------
+0: TASK#  NAME
+0:  0  r3i4n21
+0:  1  r3i4n21
+0:  2  r3i4n21
+0:  3  r3i4n21
+0:  4  r3i4n21
+0:  5  r3i4n21
+0:  6  r3i4n21
+0:  7  r3i4n21
+0:  8  r3i4n21
+0:  9  r3i4n21
+0: 10  r3i4n21
+0: 11  r3i4n21
+0: 12  r3i4n21
+0: 13  r3i4n21
+0: 14  r3i4n21
+0: 15  r3i4n21
+0: 16  r3i4n21
+0: 17  r3i4n21
+0: 18  r3i4n21
+0: 19  r3i4n21
+0: 20  r3i4n21
+0: 21  r3i4n21
+0: 22  r3i4n21
+0: 23  r3i4n21
+0: 24  r3i4n21
+0: 25  r3i4n21
+0: 26  r3i4n21
+0: 27  r3i4n21
+0: 28  r3i4n21
+0: 29  r3i4n21
+0: 30  r3i4n21
+0: 31  r3i4n21
+0: 32  r3i4n21
+0: 33  r3i4n21
+0: 34  r3i4n21
+0: 35  r3i4n21
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/inic/mpas/mpasa120_L32_init.umjs.dry_c
+1: 201021.nc           0
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode1_rrtmg_aeronetdust
+1: _sig1.6_dgnh.48_c140304.nc           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode2_rrtmg_aitkendust_
+1: c141106.nc           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode3_rrtmg_aeronetdust
+1: _sig1.2_dgnl.40_c150219.nc           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode4_rrtmg_c130628.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/sulfate_rrtmg_c080918.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/ocpho_rrtmg_c130709.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/ocphi_rrtmg_c100508.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/bcpho_rrtmg_c100508.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/dust_aeronet_rrtmg_c141106.n
+1: c           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/ssam_rrtmg_c100508.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/solar/ape_solar_ave_tsi_1365.nc
+1:           1
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/solar/ape_solar_ave_tsi_1365.nc
+1:           1
+0:
+0:l, cnst_name(l), cnst_name_cw(l)
+0:   1  Q                                     
+0:   2  CLDLIQ                                
+0:   3  CLDICE                                
+0:   4  NUMLIQ                                
+0:   5  NUMICE                                
+0:   6  RAINQM                                
+0:   7  SNOWQM                                
+0:   8  NUMRAI                                
+0:   9  NUMSNO                                
+0:  10  H2O2                                  
+0:  11  H2SO4                                 
+0:  12  SO2                                   
+0:  13  DMS                                   
+0:  14  SOAG                                  
+0:  15  so4_a1            so4_c1              
+0:  16  pom_a1            pom_c1              
+0:  17  soa_a1            soa_c1              
+0:  18  bc_a1             bc_c1               
+0:  19  dst_a1            dst_c1              
+0:  20  ncl_a1            ncl_c1              
+0:  21  num_a1            num_c1              
+0:  22  so4_a2            so4_c2              
+0:  23  dst_a2            dst_c2              
+0:  24  soa_a2            soa_c2              
+0:  25  ncl_a2            ncl_c2              
+0:  26  num_a2            num_c2              
+0:  27  dst_a3            dst_c3              
+0:  28  ncl_a3            ncl_c3              
+0:  29  so4_a3            so4_c3              
+0:  30  num_a3            num_c3              
+0:  31  pom_a4            pom_c4              
+0:  32  bc_a4             bc_c4               
+0:  33  num_a4            num_c4              
+0:calcsize addfld - num_a1_sfcsiz1             
+0:calcsize addfld - num_a1_sfcsiz2             
+0:calcsize addfld - num_c1_sfcsiz1             
+0:calcsize addfld - num_c1_sfcsiz2             
+0:calcsize addfld - num_a2_sfcsiz1             
+0:calcsize addfld - num_a2_sfcsiz2             
+0:calcsize addfld - num_c2_sfcsiz1             
+0:calcsize addfld - num_c2_sfcsiz2             
+0:calcsize addfld - num_a3_sfcsiz1             
+0:calcsize addfld - num_a3_sfcsiz2             
+0:calcsize addfld - num_c3_sfcsiz1             
+0:calcsize addfld - num_c3_sfcsiz2             
+0:calcsize addfld - num_a4_sfcsiz1             
+0:calcsize addfld - num_a4_sfcsiz2             
+0:calcsize addfld - num_c4_sfcsiz1             
+0:calcsize addfld - num_c4_sfcsiz2             
+0:calcsize addfld - num_a2_sfcsiz3             
+0:calcsize addfld - num_a1_sfcsiz3             
+0:calcsize addfld - num_a2_sfcsiz4             
+0:calcsize addfld - num_a1_sfcsiz4             
+0:calcsize addfld - num_c2_sfcsiz3             
+0:calcsize addfld - num_c1_sfcsiz3             
+0:calcsize addfld - num_c2_sfcsiz4             
+0:calcsize addfld - num_c1_sfcsiz4             
+0:calcsize addfld - so4_a2_sfcsiz3             
+0:calcsize addfld - so4_a1_sfcsiz3             
+0:calcsize addfld - so4_a2_sfcsiz4             
+0:calcsize addfld - so4_a1_sfcsiz4             
+0:calcsize addfld - so4_c2_sfcsiz3             
+0:calcsize addfld - so4_c1_sfcsiz3             
+0:calcsize addfld - so4_c2_sfcsiz4             
+0:calcsize addfld - so4_c1_sfcsiz4             
+0:calcsize addfld - soa_a2_sfcsiz3             
+0:calcsize addfld - soa_a1_sfcsiz3             
+0:calcsize addfld - soa_a2_sfcsiz4             
+0:calcsize addfld - soa_a1_sfcsiz4             
+0:calcsize addfld - soa_c2_sfcsiz3             
+0:calcsize addfld - soa_c1_sfcsiz3             
+0:calcsize addfld - soa_c2_sfcsiz4             
+0:calcsize addfld - soa_c1_sfcsiz4             
+0:calcsize addfld - ncl_a2_sfcsiz3             
+0:calcsize addfld - ncl_a1_sfcsiz3             
+0:calcsize addfld - ncl_a2_sfcsiz4             
+0:calcsize addfld - ncl_a1_sfcsiz4             
+0:calcsize addfld - ncl_c2_sfcsiz3             
+0:calcsize addfld - ncl_c1_sfcsiz3             
+0:calcsize addfld - ncl_c2_sfcsiz4             
+0:calcsize addfld - ncl_c1_sfcsiz4             
+0:calcsize addfld - dst_a2_sfcsiz3             
+0:calcsize addfld - dst_a1_sfcsiz3             
+0:calcsize addfld - dst_a2_sfcsiz4             
+0:calcsize addfld - dst_a1_sfcsiz4             
+0:calcsize addfld - dst_c2_sfcsiz3             
+0:calcsize addfld - dst_c1_sfcsiz3             
+0:calcsize addfld - dst_c2_sfcsiz4             
+0:calcsize addfld - dst_c1_sfcsiz4             
+0:
+0:subr. modal_aero_gasaerexch_init - primary carbon aging pointers
+0:pair  1     mode  4 ---> mode  1
+0:     spec 33=num_a4           ---> spec 21=num_a1          
+0:     spec 31=pom_a4           ---> spec 16=pom_a1          
+0:     spec 32=bc_a4            ---> spec 18=bc_a1           
+0: 
+0:qconff addfld   qconff_gaex                   kg/kg/s 
+0:qevapff addfld   qevapff_gaex                  kg/kg/s 
+0:qconbb addfld   qconbb_gaex                   kg/kg/s 
+0:qevapbb addfld   qevapbb_gaex                  kg/kg/s 
+0:qconbg addfld   qconbg_gaex                   kg/kg/s 
+0:qevapbg addfld   qevapbg_gaex                  kg/kg/s 
+0:qcon addfld   qcon_gaex                     kg/kg/s 
+0:qevap addfld   qevap_gaex                    kg/kg/s 
+0:gasaerexch addfld   H2SO4_sfgaex1                 kg/m2/s 
+0:gasaerexch addfld   SOAG_sfgaex1                  kg/m2/s 
+0:gasaerexch addfld   so4_a1_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   pom_a1_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   soa_a1_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   bc_a1_sfgaex1                 kg/m2/s 
+0:gasaerexch addfld   num_a1_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   so4_a2_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   soa_a2_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   so4_a3_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   pom_a4_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   bc_a4_sfgaex1                 kg/m2/s 
+0:gasaerexch addfld   num_a4_sfgaex1                kg/m2/s 
+0:gasaerexch addfld   so4_a1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   so4_c1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   soa_a1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   soa_c1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   dst_a1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   dst_c1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_a1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_c1_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   num_a1_sfgaex2                #/m2/s  
+0:gasaerexch addfld   num_c1_sfgaex2                #/m2/s  
+0:gasaerexch addfld   so4_a2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   so4_c2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   dst_a2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   dst_c2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   soa_a2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   soa_c2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_a2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_c2_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   num_a2_sfgaex2                #/m2/s  
+0:gasaerexch addfld   num_c2_sfgaex2                #/m2/s  
+0:gasaerexch addfld   dst_a3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   dst_c3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_a3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   ncl_c3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   so4_a3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   so4_c3_sfgaex2                kg/m2/s 
+0:gasaerexch addfld   num_a3_sfgaex2                #/m2/s  
+0:gasaerexch addfld   num_c3_sfgaex2                #/m2/s  
+0:
+0:subr. modal_aero_coag_init
+0:pair  1     mode  2 ---> mode  1   eff  1
+0:     spec 22=so4_a2           ---> spec 15=so4_a1          
+0:     spec 24=soa_a2           ---> spec 17=soa_a1          
+0:     spec 25=ncl_a2           ---> spec 20=ncl_a1          
+0:     spec 23=dst_a2           ---> spec 19=dst_a1          
+0:pair  2     mode  4 ---> mode  1   eff  1
+0:     spec 31=pom_a4           ---> spec 16=pom_a1          
+0:     spec 32=bc_a4            ---> spec 18=bc_a1           
+0:pair  3     mode  2 ---> mode  4   eff  1
+0:     spec 22=so4_a2           ---> spec 15=so4_a1          
+0:     spec 24=soa_a2           ---> spec 17=soa_a1          
+0:     spec 25=ncl_a2           ---> spec 20=ncl_a1          
+0:     spec 23=dst_a2           ---> spec 19=dst_a1          
+0: 
+0:modal_aero_coag_init addfld  so4_a1_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  pom_a1_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  soa_a1_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  bc_a1_sfcoag1                kg/m2/s 
+0:modal_aero_coag_init addfld  dst_a1_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  ncl_a1_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  num_a1_sfcoag1               #/m2/s  
+0:modal_aero_coag_init addfld  so4_a2_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  dst_a2_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  soa_a2_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  ncl_a2_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  num_a2_sfcoag1               #/m2/s  
+0:modal_aero_coag_init addfld  pom_a4_sfcoag1               kg/m2/s 
+0:modal_aero_coag_init addfld  bc_a4_sfcoag1                kg/m2/s 
+0:modal_aero_coag_init addfld  num_a4_sfcoag1               #/m2/s  
+0:modal_aero_newnuc_init addfld  H2SO4_sfnnuc1                kg/m2/s 
+0:modal_aero_newnuc_init addfld  so4_a2_sfnnuc1               kg/m2/s 
+0:modal_aero_newnuc_init addfld  num_a2_sfnnuc1               #/m2/s  
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/dst/dst_source2x2tunedcam6-2x2-0406201
+1: 7.nc           2
+1: Opened existing file 
+1: /glade/p/cesmdata/inputdata/atm/cam/chem/trop_mam/atmsrf_mpasa120_c090720.nc
+1:           3
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/phot/exo_coldens.nc
+1:           3
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/ozone/apeozone_cam3_5_54.nc
+1:           3
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/water_refindex_rrtmg_c080910
+1: .nc           4
+6: l_use_precip_frac =  T
+6: l_predict_upwp_vpwp =  F
+6: l_min_wp2_from_corr_wx =  F
+6: l_min_xp2_from_corr_wx =  F
+6: l_C2_cloud_frac =  F
+6: l_diffuse_rtm_and_thlm =  F
+6: l_stability_correct_Kh_N2_zm =  F
+6: l_calc_thlp2_rad =  T
+6: l_upwind_wpxp_ta =  F
+6: l_upwind_xpyp_ta =  T
+6: l_upwind_xm_ma =  T
+6: l_uv_nudge =  F
+6: l_rtm_nudge =  F
+6: l_tke_aniso =  T
+6: l_vert_avg_closure =  T
+6: l_trapezoidal_rule_zt =  T
+6: l_trapezoidal_rule_zm =  T
+6: l_call_pdf_closure_twice =  T
+6: l_standard_term_ta =  F
+6: l_use_cloud_cover =  T
+6: l_diagnose_correlations =  F
+6: l_calc_w_corr =  F
+6: l_const_Nc_in_cloud =  F
+6: l_fix_w_chi_eta_correlations =  T
+6: l_stability_correct_tau_zm =  T
+6: l_damp_wp2_using_em =  F
+6: l_do_expldiff_rtm_thlm =  T
+6: l_Lscale_plume_centered =  F
+6: l_diag_Lscale_from_tau =  F
+6: l_use_ice_latent =  F
+6: l_use_C7_Richardson =  F
+6: l_use_C11_Richardson =  F
+6: l_brunt_vaisala_freq_moist =  F
+6: l_use_thvm_in_bv_freq =  F
+6: l_rcm_supersat_adj =  F
+6: l_single_C2_Skw =  F
+6: l_damp_wp3_Skw_squared =  F
+6: l_prescribed_avg_deltaz =  F
+6: l_update_pressure =  F
+10: l_use_precip_frac =  T
+10: l_predict_upwp_vpwp =  F
+10: l_min_wp2_from_corr_wx =  F
+10: l_min_xp2_from_corr_wx =  F
+10: l_C2_cloud_frac =  F
+10: l_diffuse_rtm_and_thlm =  F
+10: l_stability_correct_Kh_N2_zm =  F
+10: l_calc_thlp2_rad =  T
+10: l_upwind_wpxp_ta =  F
+10: l_upwind_xpyp_ta =  T
+10: l_upwind_xm_ma =  T
+10: l_uv_nudge =  F
+10: l_rtm_nudge =  F
+10: l_tke_aniso =  T
+10: l_vert_avg_closure =  T
+10: l_trapezoidal_rule_zt =  T
+10: l_trapezoidal_rule_zm =  T
+10: l_call_pdf_closure_twice =  T
+10: l_standard_term_ta =  F
+10: l_use_cloud_cover =  T
+10: l_diagnose_correlations =  F
+10: l_calc_w_corr =  F
+10: l_const_Nc_in_cloud =  F
+10: l_fix_w_chi_eta_correlations =  T
+10: l_stability_correct_tau_zm =  T
+10: l_damp_wp2_using_em =  F
+10: l_do_expldiff_rtm_thlm =  T
+10: l_Lscale_plume_centered =  F
+10: l_diag_Lscale_from_tau =  F
+10: l_use_ice_latent =  F
+10: l_use_C7_Richardson =  F
+10: l_use_C11_Richardson =  F
+10: l_brunt_vaisala_freq_moist =  F
+10: l_use_thvm_in_bv_freq =  F
+10: l_rcm_supersat_adj =  F
+10: l_single_C2_Skw =  F
+10: l_damp_wp3_Skw_squared =  F
+10: l_prescribed_avg_deltaz =  F
+10: l_update_pressure =  F
+15: l_use_precip_frac =  T
+15: l_predict_upwp_vpwp =  F
+15: l_min_wp2_from_corr_wx =  F
+15: l_min_xp2_from_corr_wx =  F
+15: l_C2_cloud_frac =  F
+15: l_diffuse_rtm_and_thlm =  F
+15: l_stability_correct_Kh_N2_zm =  F
+15: l_calc_thlp2_rad =  T
+15: l_upwind_wpxp_ta =  F
+15: l_upwind_xpyp_ta =  T
+15: l_upwind_xm_ma =  T
+15: l_uv_nudge =  F
+15: l_rtm_nudge =  F
+15: l_tke_aniso =  T
+15: l_vert_avg_closure =  T
+15: l_trapezoidal_rule_zt =  T
+15: l_trapezoidal_rule_zm =  T
+15: l_call_pdf_closure_twice =  T
+15: l_standard_term_ta =  F
+15: l_use_cloud_cover =  T
+15: l_diagnose_correlations =  F
+15: l_calc_w_corr =  F
+15: l_const_Nc_in_cloud =  F
+15: l_fix_w_chi_eta_correlations =  T
+15: l_stability_correct_tau_zm =  T
+15: l_damp_wp2_using_em =  F
+15: l_do_expldiff_rtm_thlm =  T
+15: l_Lscale_plume_centered =  F
+15: l_diag_Lscale_from_tau =  F
+15: l_use_ice_latent =  F
+15: l_use_C7_Richardson =  F
+15: l_use_C11_Richardson =  F
+15: l_brunt_vaisala_freq_moist =  F
+15: l_use_thvm_in_bv_freq =  F
+15: l_rcm_supersat_adj =  F
+15: l_single_C2_Skw =  F
+15: l_damp_wp3_Skw_squared =  F
+15: l_prescribed_avg_deltaz =  F
+15: l_update_pressure =  F
+26: l_use_precip_frac =  T
+26: l_predict_upwp_vpwp =  F
+26: l_min_wp2_from_corr_wx =  F
+26: l_min_xp2_from_corr_wx =  F
+26: l_C2_cloud_frac =  F
+26: l_diffuse_rtm_and_thlm =  F
+26: l_stability_correct_Kh_N2_zm =  F
+26: l_calc_thlp2_rad =  T
+26: l_upwind_wpxp_ta =  F
+26: l_upwind_xpyp_ta =  T
+26: l_upwind_xm_ma =  T
+26: l_uv_nudge =  F
+26: l_rtm_nudge =  F
+26: l_tke_aniso =  T
+26: l_vert_avg_closure =  T
+26: l_trapezoidal_rule_zt =  T
+26: l_trapezoidal_rule_zm =  T
+26: l_call_pdf_closure_twice =  T
+26: l_standard_term_ta =  F
+26: l_use_cloud_cover =  T
+26: l_diagnose_correlations =  F
+26: l_calc_w_corr =  F
+26: l_const_Nc_in_cloud =  F
+26: l_fix_w_chi_eta_correlations =  T
+26: l_stability_correct_tau_zm =  T
+26: l_damp_wp2_using_em =  F
+26: l_do_expldiff_rtm_thlm =  T
+26: l_Lscale_plume_centered =  F
+26: l_diag_Lscale_from_tau =  F
+26: l_use_ice_latent =  F
+26: l_use_C7_Richardson =  F
+26: l_use_C11_Richardson =  F
+26: l_brunt_vaisala_freq_moist =  F
+26: l_use_thvm_in_bv_freq =  F
+26: l_rcm_supersat_adj =  F
+26: l_single_C2_Skw =  F
+26: l_damp_wp3_Skw_squared =  F
+26: l_prescribed_avg_deltaz =  F
+26: l_update_pressure =  F
+32: l_use_precip_frac =  T
+32: l_predict_upwp_vpwp =  F
+32: l_min_wp2_from_corr_wx =  F
+32: l_min_xp2_from_corr_wx =  F
+32: l_C2_cloud_frac =  F
+32: l_diffuse_rtm_and_thlm =  F
+32: l_stability_correct_Kh_N2_zm =  F
+32: l_calc_thlp2_rad =  T
+32: l_upwind_wpxp_ta =  F
+32: l_upwind_xpyp_ta =  T
+32: l_upwind_xm_ma =  T
+32: l_uv_nudge =  F
+32: l_rtm_nudge =  F
+32: l_tke_aniso =  T
+32: l_vert_avg_closure =  T
+32: l_trapezoidal_rule_zt =  T
+32: l_trapezoidal_rule_zm =  T
+32: l_call_pdf_closure_twice =  T
+32: l_standard_term_ta =  F
+32: l_use_cloud_cover =  T
+32: l_diagnose_correlations =  F
+32: l_calc_w_corr =  F
+32: l_const_Nc_in_cloud =  F
+32: l_fix_w_chi_eta_correlations =  T
+32: l_stability_correct_tau_zm =  T
+32: l_damp_wp2_using_em =  F
+32: l_do_expldiff_rtm_thlm =  T
+32: l_Lscale_plume_centered =  F
+32: l_diag_Lscale_from_tau =  F
+32: l_use_ice_latent =  F
+32: l_use_C7_Richardson =  F
+32: l_use_C11_Richardson =  F
+32: l_brunt_vaisala_freq_moist =  F
+32: l_use_thvm_in_bv_freq =  F
+32: l_rcm_supersat_adj =  F
+32: l_single_C2_Skw =  F
+32: l_damp_wp3_Skw_squared =  F
+32: l_prescribed_avg_deltaz =  F
+32: l_update_pressure =  F
+34: l_use_precip_frac =  T
+34: l_predict_upwp_vpwp =  F
+34: l_min_wp2_from_corr_wx =  F
+34: l_min_xp2_from_corr_wx =  F
+34: l_C2_cloud_frac =  F
+34: l_diffuse_rtm_and_thlm =  F
+34: l_stability_correct_Kh_N2_zm =  F
+34: l_calc_thlp2_rad =  T
+34: l_upwind_wpxp_ta =  F
+34: l_upwind_xpyp_ta =  T
+34: l_upwind_xm_ma =  T
+34: l_uv_nudge =  F
+34: l_rtm_nudge =  F
+34: l_tke_aniso =  T
+34: l_vert_avg_closure =  T
+34: l_trapezoidal_rule_zt =  T
+34: l_trapezoidal_rule_zm =  T
+34: l_call_pdf_closure_twice =  T
+34: l_standard_term_ta =  F
+34: l_use_cloud_cover =  T
+34: l_diagnose_correlations =  F
+34: l_calc_w_corr =  F
+34: l_const_Nc_in_cloud =  F
+34: l_fix_w_chi_eta_correlations =  T
+34: l_stability_correct_tau_zm =  T
+34: l_damp_wp2_using_em =  F
+34: l_do_expldiff_rtm_thlm =  T
+34: l_Lscale_plume_centered =  F
+34: l_diag_Lscale_from_tau =  F
+34: l_use_ice_latent =  F
+34: l_use_C7_Richardson =  F
+34: l_use_C11_Richardson =  F
+34: l_brunt_vaisala_freq_moist =  F
+34: l_use_thvm_in_bv_freq =  F
+34: l_rcm_supersat_adj =  F
+34: l_single_C2_Skw =  F
+34: l_damp_wp3_Skw_squared =  F
+34: l_prescribed_avg_deltaz =  F
+34: l_update_pressure =  F
+33: l_use_precip_frac =  T
+33: l_predict_upwp_vpwp =  F
+33: l_min_wp2_from_corr_wx =  F
+33: l_min_xp2_from_corr_wx =  F
+33: l_C2_cloud_frac =  F
+33: l_diffuse_rtm_and_thlm =  F
+33: l_stability_correct_Kh_N2_zm =  F
+33: l_calc_thlp2_rad =  T
+33: l_upwind_wpxp_ta =  F
+33: l_upwind_xpyp_ta =  T
+33: l_upwind_xm_ma =  T
+33: l_uv_nudge =  F
+33: l_rtm_nudge =  F
+33: l_tke_aniso =  T
+33: l_vert_avg_closure =  T
+33: l_trapezoidal_rule_zt =  T
+33: l_trapezoidal_rule_zm =  T
+33: l_call_pdf_closure_twice =  T
+33: l_standard_term_ta =  F
+33: l_use_cloud_cover =  T
+33: l_diagnose_correlations =  F
+33: l_calc_w_corr =  F
+33: l_const_Nc_in_cloud =  F
+33: l_fix_w_chi_eta_correlations =  T
+33: l_stability_correct_tau_zm =  T
+33: l_damp_wp2_using_em =  F
+33: l_do_expldiff_rtm_thlm =  T
+33: l_Lscale_plume_centered =  F
+33: l_diag_Lscale_from_tau =  F
+33: l_use_ice_latent =  F
+33: l_use_C7_Richardson =  F
+33: l_use_C11_Richardson =  F
+33: l_brunt_vaisala_freq_moist =  F
+33: l_use_thvm_in_bv_freq =  F
+33: l_rcm_supersat_adj =  F
+33: l_single_C2_Skw =  F
+33: l_damp_wp3_Skw_squared =  F
+33: l_prescribed_avg_deltaz =  F
+33: l_update_pressure =  F
+23: l_use_precip_frac =  T
+23: l_predict_upwp_vpwp =  F
+23: l_min_wp2_from_corr_wx =  F
+23: l_min_xp2_from_corr_wx =  F
+23: l_C2_cloud_frac =  F
+23: l_diffuse_rtm_and_thlm =  F
+23: l_stability_correct_Kh_N2_zm =  F
+23: l_calc_thlp2_rad =  T
+23: l_upwind_wpxp_ta =  F
+23: l_upwind_xpyp_ta =  T
+23: l_upwind_xm_ma =  T
+23: l_uv_nudge =  F
+23: l_rtm_nudge =  F
+23: l_tke_aniso =  T
+23: l_vert_avg_closure =  T
+23: l_trapezoidal_rule_zt =  T
+23: l_trapezoidal_rule_zm =  T
+23: l_call_pdf_closure_twice =  T
+23: l_standard_term_ta =  F
+23: l_use_cloud_cover =  T
+23: l_diagnose_correlations =  F
+23: l_calc_w_corr =  F
+23: l_const_Nc_in_cloud =  F
+23: l_fix_w_chi_eta_correlations =  T
+23: l_stability_correct_tau_zm =  T
+23: l_damp_wp2_using_em =  F
+23: l_do_expldiff_rtm_thlm =  T
+23: l_Lscale_plume_centered =  F
+23: l_diag_Lscale_from_tau =  F
+23: l_use_ice_latent =  F
+23: l_use_C7_Richardson =  F
+23: l_use_C11_Richardson =  F
+23: l_brunt_vaisala_freq_moist =  F
+23: l_use_thvm_in_bv_freq =  F
+23: l_rcm_supersat_adj =  F
+23: l_single_C2_Skw =  F
+23: l_damp_wp3_Skw_squared =  F
+23: l_prescribed_avg_deltaz =  F
+23: l_update_pressure =  F
+5: l_use_precip_frac =  T
+5: l_predict_upwp_vpwp =  F
+5: l_min_wp2_from_corr_wx =  F
+5: l_min_xp2_from_corr_wx =  F
+5: l_C2_cloud_frac =  F
+5: l_diffuse_rtm_and_thlm =  F
+5: l_stability_correct_Kh_N2_zm =  F
+5: l_calc_thlp2_rad =  T
+5: l_upwind_wpxp_ta =  F
+5: l_upwind_xpyp_ta =  T
+5: l_upwind_xm_ma =  T
+5: l_uv_nudge =  F
+5: l_rtm_nudge =  F
+5: l_tke_aniso =  T
+5: l_vert_avg_closure =  T
+5: l_trapezoidal_rule_zt =  T
+5: l_trapezoidal_rule_zm =  T
+5: l_call_pdf_closure_twice =  T
+5: l_standard_term_ta =  F
+5: l_use_cloud_cover =  T
+5: l_diagnose_correlations =  F
+5: l_calc_w_corr =  F
+5: l_const_Nc_in_cloud =  F
+5: l_fix_w_chi_eta_correlations =  T
+5: l_stability_correct_tau_zm =  T
+5: l_damp_wp2_using_em =  F
+5: l_do_expldiff_rtm_thlm =  T
+5: l_Lscale_plume_centered =  F
+5: l_diag_Lscale_from_tau =  F
+5: l_use_ice_latent =  F
+5: l_use_C7_Richardson =  F
+5: l_use_C11_Richardson =  F
+5: l_brunt_vaisala_freq_moist =  F
+5: l_use_thvm_in_bv_freq =  F
+5: l_rcm_supersat_adj =  F
+5: l_single_C2_Skw =  F
+5: l_damp_wp3_Skw_squared =  F
+5: l_prescribed_avg_deltaz =  F
+5: l_update_pressure =  F
+21: l_use_precip_frac =  T
+21: l_predict_upwp_vpwp =  F
+21: l_min_wp2_from_corr_wx =  F
+21: l_min_xp2_from_corr_wx =  F
+21: l_C2_cloud_frac =  F
+21: l_diffuse_rtm_and_thlm =  F
+21: l_stability_correct_Kh_N2_zm =  F
+21: l_calc_thlp2_rad =  T
+21: l_upwind_wpxp_ta =  F
+21: l_upwind_xpyp_ta =  T
+21: l_upwind_xm_ma =  T
+21: l_uv_nudge =  F
+21: l_rtm_nudge =  F
+21: l_tke_aniso =  T
+21: l_vert_avg_closure =  T
+21: l_trapezoidal_rule_zt =  T
+21: l_trapezoidal_rule_zm =  T
+21: l_call_pdf_closure_twice =  T
+21: l_standard_term_ta =  F
+21: l_use_cloud_cover =  T
+21: l_diagnose_correlations =  F
+21: l_calc_w_corr =  F
+21: l_const_Nc_in_cloud =  F
+21: l_fix_w_chi_eta_correlations =  T
+21: l_stability_correct_tau_zm =  T
+21: l_damp_wp2_using_em =  F
+21: l_do_expldiff_rtm_thlm =  T
+21: l_Lscale_plume_centered =  F
+21: l_diag_Lscale_from_tau =  F
+21: l_use_ice_latent =  F
+21: l_use_C7_Richardson =  F
+21: l_use_C11_Richardson =  F
+21: l_brunt_vaisala_freq_moist =  F
+21: l_use_thvm_in_bv_freq =  F
+21: l_rcm_supersat_adj =  F
+21: l_single_C2_Skw =  F
+21: l_damp_wp3_Skw_squared =  F
+21: l_prescribed_avg_deltaz =  F
+21: l_update_pressure =  F
+1: l_use_precip_frac =  T
+1: l_predict_upwp_vpwp =  F
+1: l_min_wp2_from_corr_wx =  F
+1: l_min_xp2_from_corr_wx =  F
+1: l_C2_cloud_frac =  F
+1: l_diffuse_rtm_and_thlm =  F
+1: l_stability_correct_Kh_N2_zm =  F
+1: l_calc_thlp2_rad =  T
+1: l_upwind_wpxp_ta =  F
+1: l_upwind_xpyp_ta =  T
+1: l_upwind_xm_ma =  T
+1: l_uv_nudge =  F
+1: l_rtm_nudge =  F
+1: l_tke_aniso =  T
+1: l_vert_avg_closure =  T
+1: l_trapezoidal_rule_zt =  T
+1: l_trapezoidal_rule_zm =  T
+1: l_call_pdf_closure_twice =  T
+1: l_standard_term_ta =  F
+1: l_use_cloud_cover =  T
+1: l_diagnose_correlations =  F
+1: l_calc_w_corr =  F
+1: l_const_Nc_in_cloud =  F
+1: l_fix_w_chi_eta_correlations =  T
+1: l_stability_correct_tau_zm =  T
+1: l_damp_wp2_using_em =  F
+1: l_do_expldiff_rtm_thlm =  T
+1: l_Lscale_plume_centered =  F
+1: l_diag_Lscale_from_tau =  F
+1: l_use_ice_latent =  F
+1: l_use_C7_Richardson =  F
+1: l_use_C11_Richardson =  F
+1: l_brunt_vaisala_freq_moist =  F
+1: l_use_thvm_in_bv_freq =  F
+1: l_rcm_supersat_adj =  F
+1: l_single_C2_Skw =  F
+1: l_damp_wp3_Skw_squared =  F
+1: l_prescribed_avg_deltaz =  F
+1: l_update_pressure =  F
+13: l_use_precip_frac =  T
+13: l_predict_upwp_vpwp =  F
+13: l_min_wp2_from_corr_wx =  F
+13: l_min_xp2_from_corr_wx =  F
+13: l_C2_cloud_frac =  F
+13: l_diffuse_rtm_and_thlm =  F
+13: l_stability_correct_Kh_N2_zm =  F
+13: l_calc_thlp2_rad =  T
+13: l_upwind_wpxp_ta =  F
+13: l_upwind_xpyp_ta =  T
+13: l_upwind_xm_ma =  T
+13: l_uv_nudge =  F
+13: l_rtm_nudge =  F
+13: l_tke_aniso =  T
+13: l_vert_avg_closure =  T
+13: l_trapezoidal_rule_zt =  T
+13: l_trapezoidal_rule_zm =  T
+13: l_call_pdf_closure_twice =  T
+13: l_standard_term_ta =  F
+13: l_use_cloud_cover =  T
+13: l_diagnose_correlations =  F
+13: l_calc_w_corr =  F
+13: l_const_Nc_in_cloud =  F
+13: l_fix_w_chi_eta_correlations =  T
+13: l_stability_correct_tau_zm =  T
+13: l_damp_wp2_using_em =  F
+13: l_do_expldiff_rtm_thlm =  T
+13: l_Lscale_plume_centered =  F
+13: l_diag_Lscale_from_tau =  F
+13: l_use_ice_latent =  F
+13: l_use_C7_Richardson =  F
+13: l_use_C11_Richardson =  F
+13: l_brunt_vaisala_freq_moist =  F
+13: l_use_thvm_in_bv_freq =  F
+13: l_rcm_supersat_adj =  F
+13: l_single_C2_Skw =  F
+13: l_damp_wp3_Skw_squared =  F
+13: l_prescribed_avg_deltaz =  F
+13: l_update_pressure =  F
+2: l_use_precip_frac =  T
+2: l_predict_upwp_vpwp =  F
+2: l_min_wp2_from_corr_wx =  F
+2: l_min_xp2_from_corr_wx =  F
+2: l_C2_cloud_frac =  F
+2: l_diffuse_rtm_and_thlm =  F
+2: l_stability_correct_Kh_N2_zm =  F
+2: l_calc_thlp2_rad =  T
+2: l_upwind_wpxp_ta =  F
+2: l_upwind_xpyp_ta =  T
+2: l_upwind_xm_ma =  T
+2: l_uv_nudge =  F
+2: l_rtm_nudge =  F
+2: l_tke_aniso =  T
+2: l_vert_avg_closure =  T
+2: l_trapezoidal_rule_zt =  T
+2: l_trapezoidal_rule_zm =  T
+2: l_call_pdf_closure_twice =  T
+2: l_standard_term_ta =  F
+2: l_use_cloud_cover =  T
+2: l_diagnose_correlations =  F
+2: l_calc_w_corr =  F
+2: l_const_Nc_in_cloud =  F
+2: l_fix_w_chi_eta_correlations =  T
+2: l_stability_correct_tau_zm =  T
+2: l_damp_wp2_using_em =  F
+2: l_do_expldiff_rtm_thlm =  T
+2: l_Lscale_plume_centered =  F
+2: l_diag_Lscale_from_tau =  F
+2: l_use_ice_latent =  F
+2: l_use_C7_Richardson =  F
+2: l_use_C11_Richardson =  F
+2: l_brunt_vaisala_freq_moist =  F
+2: l_use_thvm_in_bv_freq =  F
+2: l_rcm_supersat_adj =  F
+2: l_single_C2_Skw =  F
+2: l_damp_wp3_Skw_squared =  F
+2: l_prescribed_avg_deltaz =  F
+2: l_update_pressure =  F
+3: l_use_precip_frac =  T
+3: l_predict_upwp_vpwp =  F
+3: l_min_wp2_from_corr_wx =  F
+3: l_min_xp2_from_corr_wx =  F
+3: l_C2_cloud_frac =  F
+3: l_diffuse_rtm_and_thlm =  F
+3: l_stability_correct_Kh_N2_zm =  F
+3: l_calc_thlp2_rad =  T
+3: l_upwind_wpxp_ta =  F
+3: l_upwind_xpyp_ta =  T
+3: l_upwind_xm_ma =  T
+3: l_uv_nudge =  F
+3: l_rtm_nudge =  F
+3: l_tke_aniso =  T
+3: l_vert_avg_closure =  T
+3: l_trapezoidal_rule_zt =  T
+3: l_trapezoidal_rule_zm =  T
+3: l_call_pdf_closure_twice =  T
+3: l_standard_term_ta =  F
+3: l_use_cloud_cover =  T
+3: l_diagnose_correlations =  F
+3: l_calc_w_corr =  F
+3: l_const_Nc_in_cloud =  F
+3: l_fix_w_chi_eta_correlations =  T
+3: l_stability_correct_tau_zm =  T
+3: l_damp_wp2_using_em =  F
+3: l_do_expldiff_rtm_thlm =  T
+3: l_Lscale_plume_centered =  F
+3: l_diag_Lscale_from_tau =  F
+3: l_use_ice_latent =  F
+3: l_use_C7_Richardson =  F
+3: l_use_C11_Richardson =  F
+3: l_brunt_vaisala_freq_moist =  F
+3: l_use_thvm_in_bv_freq =  F
+3: l_rcm_supersat_adj =  F
+3: l_single_C2_Skw =  F
+3: l_damp_wp3_Skw_squared =  F
+3: l_prescribed_avg_deltaz =  F
+3: l_update_pressure =  F
+16: l_use_precip_frac =  T
+16: l_predict_upwp_vpwp =  F
+16: l_min_wp2_from_corr_wx =  F
+16: l_min_xp2_from_corr_wx =  F
+16: l_C2_cloud_frac =  F
+16: l_diffuse_rtm_and_thlm =  F
+16: l_stability_correct_Kh_N2_zm =  F
+16: l_calc_thlp2_rad =  T
+16: l_upwind_wpxp_ta =  F
+16: l_upwind_xpyp_ta =  T
+16: l_upwind_xm_ma =  T
+16: l_uv_nudge =  F
+16: l_rtm_nudge =  F
+16: l_tke_aniso =  T
+16: l_vert_avg_closure =  T
+16: l_trapezoidal_rule_zt =  T
+16: l_trapezoidal_rule_zm =  T
+16: l_call_pdf_closure_twice =  T
+16: l_standard_term_ta =  F
+16: l_use_cloud_cover =  T
+16: l_diagnose_correlations =  F
+16: l_calc_w_corr =  F
+16: l_const_Nc_in_cloud =  F
+16: l_fix_w_chi_eta_correlations =  T
+16: l_stability_correct_tau_zm =  T
+16: l_damp_wp2_using_em =  F
+16: l_do_expldiff_rtm_thlm =  T
+16: l_Lscale_plume_centered =  F
+16: l_diag_Lscale_from_tau =  F
+16: l_use_ice_latent =  F
+16: l_use_C7_Richardson =  F
+16: l_use_C11_Richardson =  F
+16: l_brunt_vaisala_freq_moist =  F
+16: l_use_thvm_in_bv_freq =  F
+16: l_rcm_supersat_adj =  F
+16: l_single_C2_Skw =  F
+16: l_damp_wp3_Skw_squared =  F
+16: l_prescribed_avg_deltaz =  F
+16: l_update_pressure =  F
+24: l_use_precip_frac =  T
+24: l_predict_upwp_vpwp =  F
+24: l_min_wp2_from_corr_wx =  F
+24: l_min_xp2_from_corr_wx =  F
+24: l_C2_cloud_frac =  F
+24: l_diffuse_rtm_and_thlm =  F
+24: l_stability_correct_Kh_N2_zm =  F
+24: l_calc_thlp2_rad =  T
+24: l_upwind_wpxp_ta =  F
+24: l_upwind_xpyp_ta =  T
+24: l_upwind_xm_ma =  T
+24: l_uv_nudge =  F
+24: l_rtm_nudge =  F
+24: l_tke_aniso =  T
+24: l_vert_avg_closure =  T
+24: l_trapezoidal_rule_zt =  T
+24: l_trapezoidal_rule_zm =  T
+24: l_call_pdf_closure_twice =  T
+24: l_standard_term_ta =  F
+24: l_use_cloud_cover =  T
+24: l_diagnose_correlations =  F
+24: l_calc_w_corr =  F
+24: l_const_Nc_in_cloud =  F
+24: l_fix_w_chi_eta_correlations =  T
+24: l_stability_correct_tau_zm =  T
+24: l_damp_wp2_using_em =  F
+24: l_do_expldiff_rtm_thlm =  T
+24: l_Lscale_plume_centered =  F
+24: l_diag_Lscale_from_tau =  F
+24: l_use_ice_latent =  F
+24: l_use_C7_Richardson =  F
+24: l_use_C11_Richardson =  F
+24: l_brunt_vaisala_freq_moist =  F
+24: l_use_thvm_in_bv_freq =  F
+24: l_rcm_supersat_adj =  F
+24: l_single_C2_Skw =  F
+24: l_damp_wp3_Skw_squared =  F
+24: l_prescribed_avg_deltaz =  F
+24: l_update_pressure =  F
+30: l_use_precip_frac =  T
+30: l_predict_upwp_vpwp =  F
+30: l_min_wp2_from_corr_wx =  F
+30: l_min_xp2_from_corr_wx =  F
+30: l_C2_cloud_frac =  F
+30: l_diffuse_rtm_and_thlm =  F
+30: l_stability_correct_Kh_N2_zm =  F
+30: l_calc_thlp2_rad =  T
+30: l_upwind_wpxp_ta =  F
+30: l_upwind_xpyp_ta =  T
+30: l_upwind_xm_ma =  T
+30: l_uv_nudge =  F
+30: l_rtm_nudge =  F
+30: l_tke_aniso =  T
+30: l_vert_avg_closure =  T
+30: l_trapezoidal_rule_zt =  T
+30: l_trapezoidal_rule_zm =  T
+30: l_call_pdf_closure_twice =  T
+30: l_standard_term_ta =  F
+30: l_use_cloud_cover =  T
+30: l_diagnose_correlations =  F
+30: l_calc_w_corr =  F
+30: l_const_Nc_in_cloud =  F
+30: l_fix_w_chi_eta_correlations =  T
+30: l_stability_correct_tau_zm =  T
+30: l_damp_wp2_using_em =  F
+30: l_do_expldiff_rtm_thlm =  T
+30: l_Lscale_plume_centered =  F
+30: l_diag_Lscale_from_tau =  F
+30: l_use_ice_latent =  F
+30: l_use_C7_Richardson =  F
+30: l_use_C11_Richardson =  F
+30: l_brunt_vaisala_freq_moist =  F
+30: l_use_thvm_in_bv_freq =  F
+30: l_rcm_supersat_adj =  F
+30: l_single_C2_Skw =  F
+30: l_damp_wp3_Skw_squared =  F
+30: l_prescribed_avg_deltaz =  F
+30: l_update_pressure =  F
+29: l_use_precip_frac =  T
+29: l_predict_upwp_vpwp =  F
+29: l_min_wp2_from_corr_wx =  F
+29: l_min_xp2_from_corr_wx =  F
+29: l_C2_cloud_frac =  F
+29: l_diffuse_rtm_and_thlm =  F
+29: l_stability_correct_Kh_N2_zm =  F
+29: l_calc_thlp2_rad =  T
+29: l_upwind_wpxp_ta =  F
+29: l_upwind_xpyp_ta =  T
+29: l_upwind_xm_ma =  T
+29: l_uv_nudge =  F
+29: l_rtm_nudge =  F
+29: l_tke_aniso =  T
+29: l_vert_avg_closure =  T
+29: l_trapezoidal_rule_zt =  T
+29: l_trapezoidal_rule_zm =  T
+29: l_call_pdf_closure_twice =  T
+29: l_standard_term_ta =  F
+29: l_use_cloud_cover =  T
+29: l_diagnose_correlations =  F
+29: l_calc_w_corr =  F
+29: l_const_Nc_in_cloud =  F
+29: l_fix_w_chi_eta_correlations =  T
+29: l_stability_correct_tau_zm =  T
+29: l_damp_wp2_using_em =  F
+29: l_do_expldiff_rtm_thlm =  T
+29: l_Lscale_plume_centered =  F
+29: l_diag_Lscale_from_tau =  F
+29: l_use_ice_latent =  F
+29: l_use_C7_Richardson =  F
+29: l_use_C11_Richardson =  F
+29: l_brunt_vaisala_freq_moist =  F
+29: l_use_thvm_in_bv_freq =  F
+29: l_rcm_supersat_adj =  F
+29: l_single_C2_Skw =  F
+29: l_damp_wp3_Skw_squared =  F
+29: l_prescribed_avg_deltaz =  F
+29: l_update_pressure =  F
+20: l_use_precip_frac =  T
+20: l_predict_upwp_vpwp =  F
+20: l_min_wp2_from_corr_wx =  F
+20: l_min_xp2_from_corr_wx =  F
+20: l_C2_cloud_frac =  F
+20: l_diffuse_rtm_and_thlm =  F
+20: l_stability_correct_Kh_N2_zm =  F
+20: l_calc_thlp2_rad =  T
+20: l_upwind_wpxp_ta =  F
+20: l_upwind_xpyp_ta =  T
+20: l_upwind_xm_ma =  T
+20: l_uv_nudge =  F
+20: l_rtm_nudge =  F
+20: l_tke_aniso =  T
+20: l_vert_avg_closure =  T
+20: l_trapezoidal_rule_zt =  T
+20: l_trapezoidal_rule_zm =  T
+20: l_call_pdf_closure_twice =  T
+20: l_standard_term_ta =  F
+20: l_use_cloud_cover =  T
+20: l_diagnose_correlations =  F
+20: l_calc_w_corr =  F
+20: l_const_Nc_in_cloud =  F
+20: l_fix_w_chi_eta_correlations =  T
+20: l_stability_correct_tau_zm =  T
+20: l_damp_wp2_using_em =  F
+20: l_do_expldiff_rtm_thlm =  T
+20: l_Lscale_plume_centered =  F
+20: l_diag_Lscale_from_tau =  F
+20: l_use_ice_latent =  F
+20: l_use_C7_Richardson =  F
+20: l_use_C11_Richardson =  F
+20: l_brunt_vaisala_freq_moist =  F
+20: l_use_thvm_in_bv_freq =  F
+20: l_rcm_supersat_adj =  F
+20: l_single_C2_Skw =  F
+20: l_damp_wp3_Skw_squared =  F
+20: l_prescribed_avg_deltaz =  F
+20: l_update_pressure =  F
+8: l_use_precip_frac =  T
+8: l_predict_upwp_vpwp =  F
+8: l_min_wp2_from_corr_wx =  F
+8: l_min_xp2_from_corr_wx =  F
+8: l_C2_cloud_frac =  F
+8: l_diffuse_rtm_and_thlm =  F
+8: l_stability_correct_Kh_N2_zm =  F
+8: l_calc_thlp2_rad =  T
+8: l_upwind_wpxp_ta =  F
+8: l_upwind_xpyp_ta =  T
+8: l_upwind_xm_ma =  T
+8: l_uv_nudge =  F
+8: l_rtm_nudge =  F
+8: l_tke_aniso =  T
+8: l_vert_avg_closure =  T
+8: l_trapezoidal_rule_zt =  T
+8: l_trapezoidal_rule_zm =  T
+8: l_call_pdf_closure_twice =  T
+8: l_standard_term_ta =  F
+8: l_use_cloud_cover =  T
+8: l_diagnose_correlations =  F
+8: l_calc_w_corr =  F
+8: l_const_Nc_in_cloud =  F
+8: l_fix_w_chi_eta_correlations =  T
+8: l_stability_correct_tau_zm =  T
+8: l_damp_wp2_using_em =  F
+8: l_do_expldiff_rtm_thlm =  T
+8: l_Lscale_plume_centered =  F
+8: l_diag_Lscale_from_tau =  F
+8: l_use_ice_latent =  F
+8: l_use_C7_Richardson =  F
+8: l_use_C11_Richardson =  F
+8: l_brunt_vaisala_freq_moist =  F
+8: l_use_thvm_in_bv_freq =  F
+8: l_rcm_supersat_adj =  F
+8: l_single_C2_Skw =  F
+8: l_damp_wp3_Skw_squared =  F
+8: l_prescribed_avg_deltaz =  F
+8: l_update_pressure =  F
+27: l_use_precip_frac =  T
+27: l_predict_upwp_vpwp =  F
+27: l_min_wp2_from_corr_wx =  F
+27: l_min_xp2_from_corr_wx =  F
+27: l_C2_cloud_frac =  F
+27: l_diffuse_rtm_and_thlm =  F
+27: l_stability_correct_Kh_N2_zm =  F
+27: l_calc_thlp2_rad =  T
+27: l_upwind_wpxp_ta =  F
+27: l_upwind_xpyp_ta =  T
+27: l_upwind_xm_ma =  T
+27: l_uv_nudge =  F
+27: l_rtm_nudge =  F
+27: l_tke_aniso =  T
+27: l_vert_avg_closure =  T
+27: l_trapezoidal_rule_zt =  T
+27: l_trapezoidal_rule_zm =  T
+27: l_call_pdf_closure_twice =  T
+27: l_standard_term_ta =  F
+27: l_use_cloud_cover =  T
+27: l_diagnose_correlations =  F
+27: l_calc_w_corr =  F
+27: l_const_Nc_in_cloud =  F
+27: l_fix_w_chi_eta_correlations =  T
+27: l_stability_correct_tau_zm =  T
+27: l_damp_wp2_using_em =  F
+27: l_do_expldiff_rtm_thlm =  T
+27: l_Lscale_plume_centered =  F
+27: l_diag_Lscale_from_tau =  F
+27: l_use_ice_latent =  F
+27: l_use_C7_Richardson =  F
+27: l_use_C11_Richardson =  F
+27: l_brunt_vaisala_freq_moist =  F
+27: l_use_thvm_in_bv_freq =  F
+27: l_rcm_supersat_adj =  F
+27: l_single_C2_Skw =  F
+27: l_damp_wp3_Skw_squared =  F
+27: l_prescribed_avg_deltaz =  F
+27: l_update_pressure =  F
+9: l_use_precip_frac =  T
+9: l_predict_upwp_vpwp =  F
+9: l_min_wp2_from_corr_wx =  F
+9: l_min_xp2_from_corr_wx =  F
+9: l_C2_cloud_frac =  F
+9: l_diffuse_rtm_and_thlm =  F
+9: l_stability_correct_Kh_N2_zm =  F
+9: l_calc_thlp2_rad =  T
+9: l_upwind_wpxp_ta =  F
+9: l_upwind_xpyp_ta =  T
+9: l_upwind_xm_ma =  T
+9: l_uv_nudge =  F
+9: l_rtm_nudge =  F
+9: l_tke_aniso =  T
+9: l_vert_avg_closure =  T
+9: l_trapezoidal_rule_zt =  T
+9: l_trapezoidal_rule_zm =  T
+9: l_call_pdf_closure_twice =  T
+9: l_standard_term_ta =  F
+9: l_use_cloud_cover =  T
+9: l_diagnose_correlations =  F
+9: l_calc_w_corr =  F
+9: l_const_Nc_in_cloud =  F
+9: l_fix_w_chi_eta_correlations =  T
+9: l_stability_correct_tau_zm =  T
+9: l_damp_wp2_using_em =  F
+9: l_do_expldiff_rtm_thlm =  T
+9: l_Lscale_plume_centered =  F
+9: l_diag_Lscale_from_tau =  F
+9: l_use_ice_latent =  F
+9: l_use_C7_Richardson =  F
+9: l_use_C11_Richardson =  F
+9: l_brunt_vaisala_freq_moist =  F
+9: l_use_thvm_in_bv_freq =  F
+9: l_rcm_supersat_adj =  F
+9: l_single_C2_Skw =  F
+9: l_damp_wp3_Skw_squared =  F
+9: l_prescribed_avg_deltaz =  F
+9: l_update_pressure =  F
+25: l_use_precip_frac =  T
+25: l_predict_upwp_vpwp =  F
+25: l_min_wp2_from_corr_wx =  F
+25: l_min_xp2_from_corr_wx =  F
+25: l_C2_cloud_frac =  F
+25: l_diffuse_rtm_and_thlm =  F
+25: l_stability_correct_Kh_N2_zm =  F
+25: l_calc_thlp2_rad =  T
+25: l_upwind_wpxp_ta =  F
+25: l_upwind_xpyp_ta =  T
+25: l_upwind_xm_ma =  T
+25: l_uv_nudge =  F
+25: l_rtm_nudge =  F
+25: l_tke_aniso =  T
+25: l_vert_avg_closure =  T
+25: l_trapezoidal_rule_zt =  T
+25: l_trapezoidal_rule_zm =  T
+25: l_call_pdf_closure_twice =  T
+25: l_standard_term_ta =  F
+25: l_use_cloud_cover =  T
+25: l_diagnose_correlations =  F
+25: l_calc_w_corr =  F
+25: l_const_Nc_in_cloud =  F
+25: l_fix_w_chi_eta_correlations =  T
+25: l_stability_correct_tau_zm =  T
+25: l_damp_wp2_using_em =  F
+25: l_do_expldiff_rtm_thlm =  T
+25: l_Lscale_plume_centered =  F
+25: l_diag_Lscale_from_tau =  F
+25: l_use_ice_latent =  F
+25: l_use_C7_Richardson =  F
+25: l_use_C11_Richardson =  F
+25: l_brunt_vaisala_freq_moist =  F
+25: l_use_thvm_in_bv_freq =  F
+25: l_rcm_supersat_adj =  F
+25: l_single_C2_Skw =  F
+25: l_damp_wp3_Skw_squared =  F
+25: l_prescribed_avg_deltaz =  F
+25: l_update_pressure =  F
+22: l_use_precip_frac =  T
+22: l_predict_upwp_vpwp =  F
+22: l_min_wp2_from_corr_wx =  F
+22: l_min_xp2_from_corr_wx =  F
+22: l_C2_cloud_frac =  F
+22: l_diffuse_rtm_and_thlm =  F
+22: l_stability_correct_Kh_N2_zm =  F
+22: l_calc_thlp2_rad =  T
+22: l_upwind_wpxp_ta =  F
+22: l_upwind_xpyp_ta =  T
+22: l_upwind_xm_ma =  T
+22: l_uv_nudge =  F
+22: l_rtm_nudge =  F
+22: l_tke_aniso =  T
+22: l_vert_avg_closure =  T
+22: l_trapezoidal_rule_zt =  T
+22: l_trapezoidal_rule_zm =  T
+22: l_call_pdf_closure_twice =  T
+22: l_standard_term_ta =  F
+22: l_use_cloud_cover =  T
+22: l_diagnose_correlations =  F
+22: l_calc_w_corr =  F
+22: l_const_Nc_in_cloud =  F
+22: l_fix_w_chi_eta_correlations =  T
+22: l_stability_correct_tau_zm =  T
+22: l_damp_wp2_using_em =  F
+22: l_do_expldiff_rtm_thlm =  T
+22: l_Lscale_plume_centered =  F
+22: l_diag_Lscale_from_tau =  F
+22: l_use_ice_latent =  F
+22: l_use_C7_Richardson =  F
+22: l_use_C11_Richardson =  F
+22: l_brunt_vaisala_freq_moist =  F
+22: l_use_thvm_in_bv_freq =  F
+22: l_rcm_supersat_adj =  F
+22: l_single_C2_Skw =  F
+22: l_damp_wp3_Skw_squared =  F
+22: l_prescribed_avg_deltaz =  F
+22: l_update_pressure =  F
+28: l_use_precip_frac =  T
+28: l_predict_upwp_vpwp =  F
+28: l_min_wp2_from_corr_wx =  F
+28: l_min_xp2_from_corr_wx =  F
+28: l_C2_cloud_frac =  F
+28: l_diffuse_rtm_and_thlm =  F
+28: l_stability_correct_Kh_N2_zm =  F
+28: l_calc_thlp2_rad =  T
+28: l_upwind_wpxp_ta =  F
+28: l_upwind_xpyp_ta =  T
+28: l_upwind_xm_ma =  T
+28: l_uv_nudge =  F
+28: l_rtm_nudge =  F
+28: l_tke_aniso =  T
+28: l_vert_avg_closure =  T
+28: l_trapezoidal_rule_zt =  T
+28: l_trapezoidal_rule_zm =  T
+28: l_call_pdf_closure_twice =  T
+28: l_standard_term_ta =  F
+28: l_use_cloud_cover =  T
+28: l_diagnose_correlations =  F
+28: l_calc_w_corr =  F
+28: l_const_Nc_in_cloud =  F
+28: l_fix_w_chi_eta_correlations =  T
+28: l_stability_correct_tau_zm =  T
+28: l_damp_wp2_using_em =  F
+28: l_do_expldiff_rtm_thlm =  T
+28: l_Lscale_plume_centered =  F
+28: l_diag_Lscale_from_tau =  F
+28: l_use_ice_latent =  F
+28: l_use_C7_Richardson =  F
+28: l_use_C11_Richardson =  F
+28: l_brunt_vaisala_freq_moist =  F
+28: l_use_thvm_in_bv_freq =  F
+28: l_rcm_supersat_adj =  F
+28: l_single_C2_Skw =  F
+28: l_damp_wp3_Skw_squared =  F
+28: l_prescribed_avg_deltaz =  F
+28: l_update_pressure =  F
+7: l_use_precip_frac =  T
+7: l_predict_upwp_vpwp =  F
+7: l_min_wp2_from_corr_wx =  F
+7: l_min_xp2_from_corr_wx =  F
+7: l_C2_cloud_frac =  F
+7: l_diffuse_rtm_and_thlm =  F
+7: l_stability_correct_Kh_N2_zm =  F
+7: l_calc_thlp2_rad =  T
+7: l_upwind_wpxp_ta =  F
+7: l_upwind_xpyp_ta =  T
+7: l_upwind_xm_ma =  T
+7: l_uv_nudge =  F
+7: l_rtm_nudge =  F
+7: l_tke_aniso =  T
+7: l_vert_avg_closure =  T
+7: l_trapezoidal_rule_zt =  T
+7: l_trapezoidal_rule_zm =  T
+7: l_call_pdf_closure_twice =  T
+7: l_standard_term_ta =  F
+7: l_use_cloud_cover =  T
+7: l_diagnose_correlations =  F
+7: l_calc_w_corr =  F
+7: l_const_Nc_in_cloud =  F
+7: l_fix_w_chi_eta_correlations =  T
+7: l_stability_correct_tau_zm =  T
+7: l_damp_wp2_using_em =  F
+7: l_do_expldiff_rtm_thlm =  T
+7: l_Lscale_plume_centered =  F
+7: l_diag_Lscale_from_tau =  F
+7: l_use_ice_latent =  F
+7: l_use_C7_Richardson =  F
+7: l_use_C11_Richardson =  F
+7: l_brunt_vaisala_freq_moist =  F
+7: l_use_thvm_in_bv_freq =  F
+7: l_rcm_supersat_adj =  F
+7: l_single_C2_Skw =  F
+7: l_damp_wp3_Skw_squared =  F
+7: l_prescribed_avg_deltaz =  F
+7: l_update_pressure =  F
+11: l_use_precip_frac =  T
+11: l_predict_upwp_vpwp =  F
+11: l_min_wp2_from_corr_wx =  F
+11: l_min_xp2_from_corr_wx =  F
+11: l_C2_cloud_frac =  F
+11: l_diffuse_rtm_and_thlm =  F
+11: l_stability_correct_Kh_N2_zm =  F
+11: l_calc_thlp2_rad =  T
+11: l_upwind_wpxp_ta =  F
+11: l_upwind_xpyp_ta =  T
+11: l_upwind_xm_ma =  T
+11: l_uv_nudge =  F
+11: l_rtm_nudge =  F
+11: l_tke_aniso =  T
+11: l_vert_avg_closure =  T
+11: l_trapezoidal_rule_zt =  T
+11: l_trapezoidal_rule_zm =  T
+11: l_call_pdf_closure_twice =  T
+11: l_standard_term_ta =  F
+11: l_use_cloud_cover =  T
+11: l_diagnose_correlations =  F
+11: l_calc_w_corr =  F
+11: l_const_Nc_in_cloud =  F
+11: l_fix_w_chi_eta_correlations =  T
+11: l_stability_correct_tau_zm =  T
+11: l_damp_wp2_using_em =  F
+11: l_do_expldiff_rtm_thlm =  T
+11: l_Lscale_plume_centered =  F
+11: l_diag_Lscale_from_tau =  F
+11: l_use_ice_latent =  F
+11: l_use_C7_Richardson =  F
+11: l_use_C11_Richardson =  F
+11: l_brunt_vaisala_freq_moist =  F
+11: l_use_thvm_in_bv_freq =  F
+11: l_rcm_supersat_adj =  F
+11: l_single_C2_Skw =  F
+11: l_damp_wp3_Skw_squared =  F
+11: l_prescribed_avg_deltaz =  F
+11: l_update_pressure =  F
+19: l_use_precip_frac =  T
+19: l_predict_upwp_vpwp =  F
+19: l_min_wp2_from_corr_wx =  F
+19: l_min_xp2_from_corr_wx =  F
+19: l_C2_cloud_frac =  F
+19: l_diffuse_rtm_and_thlm =  F
+19: l_stability_correct_Kh_N2_zm =  F
+19: l_calc_thlp2_rad =  T
+19: l_upwind_wpxp_ta =  F
+19: l_upwind_xpyp_ta =  T
+19: l_upwind_xm_ma =  T
+19: l_uv_nudge =  F
+19: l_rtm_nudge =  F
+19: l_tke_aniso =  T
+19: l_vert_avg_closure =  T
+19: l_trapezoidal_rule_zt =  T
+19: l_trapezoidal_rule_zm =  T
+19: l_call_pdf_closure_twice =  T
+19: l_standard_term_ta =  F
+19: l_use_cloud_cover =  T
+19: l_diagnose_correlations =  F
+19: l_calc_w_corr =  F
+19: l_const_Nc_in_cloud =  F
+19: l_fix_w_chi_eta_correlations =  T
+19: l_stability_correct_tau_zm =  T
+19: l_damp_wp2_using_em =  F
+19: l_do_expldiff_rtm_thlm =  T
+19: l_Lscale_plume_centered =  F
+19: l_diag_Lscale_from_tau =  F
+19: l_use_ice_latent =  F
+19: l_use_C7_Richardson =  F
+19: l_use_C11_Richardson =  F
+19: l_brunt_vaisala_freq_moist =  F
+19: l_use_thvm_in_bv_freq =  F
+19: l_rcm_supersat_adj =  F
+19: l_single_C2_Skw =  F
+19: l_damp_wp3_Skw_squared =  F
+19: l_prescribed_avg_deltaz =  F
+19: l_update_pressure =  F
+4: l_use_precip_frac =  T
+4: l_predict_upwp_vpwp =  F
+4: l_min_wp2_from_corr_wx =  F
+4: l_min_xp2_from_corr_wx =  F
+4: l_C2_cloud_frac =  F
+4: l_diffuse_rtm_and_thlm =  F
+4: l_stability_correct_Kh_N2_zm =  F
+4: l_calc_thlp2_rad =  T
+4: l_upwind_wpxp_ta =  F
+4: l_upwind_xpyp_ta =  T
+4: l_upwind_xm_ma =  T
+4: l_uv_nudge =  F
+4: l_rtm_nudge =  F
+4: l_tke_aniso =  T
+4: l_vert_avg_closure =  T
+4: l_trapezoidal_rule_zt =  T
+4: l_trapezoidal_rule_zm =  T
+4: l_call_pdf_closure_twice =  T
+4: l_standard_term_ta =  F
+4: l_use_cloud_cover =  T
+4: l_diagnose_correlations =  F
+4: l_calc_w_corr =  F
+4: l_const_Nc_in_cloud =  F
+4: l_fix_w_chi_eta_correlations =  T
+4: l_stability_correct_tau_zm =  T
+4: l_damp_wp2_using_em =  F
+4: l_do_expldiff_rtm_thlm =  T
+4: l_Lscale_plume_centered =  F
+4: l_diag_Lscale_from_tau =  F
+4: l_use_ice_latent =  F
+4: l_use_C7_Richardson =  F
+4: l_use_C11_Richardson =  F
+4: l_brunt_vaisala_freq_moist =  F
+4: l_use_thvm_in_bv_freq =  F
+4: l_rcm_supersat_adj =  F
+4: l_single_C2_Skw =  F
+4: l_damp_wp3_Skw_squared =  F
+4: l_prescribed_avg_deltaz =  F
+4: l_update_pressure =  F
+14: l_use_precip_frac =  T
+14: l_predict_upwp_vpwp =  F
+14: l_min_wp2_from_corr_wx =  F
+14: l_min_xp2_from_corr_wx =  F
+14: l_C2_cloud_frac =  F
+14: l_diffuse_rtm_and_thlm =  F
+14: l_stability_correct_Kh_N2_zm =  F
+14: l_calc_thlp2_rad =  T
+14: l_upwind_wpxp_ta =  F
+14: l_upwind_xpyp_ta =  T
+14: l_upwind_xm_ma =  T
+14: l_uv_nudge =  F
+14: l_rtm_nudge =  F
+14: l_tke_aniso =  T
+14: l_vert_avg_closure =  T
+14: l_trapezoidal_rule_zt =  T
+14: l_trapezoidal_rule_zm =  T
+14: l_call_pdf_closure_twice =  T
+14: l_standard_term_ta =  F
+14: l_use_cloud_cover =  T
+14: l_diagnose_correlations =  F
+14: l_calc_w_corr =  F
+14: l_const_Nc_in_cloud =  F
+14: l_fix_w_chi_eta_correlations =  T
+14: l_stability_correct_tau_zm =  T
+14: l_damp_wp2_using_em =  F
+14: l_do_expldiff_rtm_thlm =  T
+14: l_Lscale_plume_centered =  F
+14: l_diag_Lscale_from_tau =  F
+14: l_use_ice_latent =  F
+14: l_use_C7_Richardson =  F
+14: l_use_C11_Richardson =  F
+14: l_brunt_vaisala_freq_moist =  F
+14: l_use_thvm_in_bv_freq =  F
+14: l_rcm_supersat_adj =  F
+14: l_single_C2_Skw =  F
+14: l_damp_wp3_Skw_squared =  F
+14: l_prescribed_avg_deltaz =  F
+14: l_update_pressure =  F
+18: l_use_precip_frac =  T
+18: l_predict_upwp_vpwp =  F
+18: l_min_wp2_from_corr_wx =  F
+18: l_min_xp2_from_corr_wx =  F
+18: l_C2_cloud_frac =  F
+18: l_diffuse_rtm_and_thlm =  F
+18: l_stability_correct_Kh_N2_zm =  F
+18: l_calc_thlp2_rad =  T
+18: l_upwind_wpxp_ta =  F
+18: l_upwind_xpyp_ta =  T
+18: l_upwind_xm_ma =  T
+18: l_uv_nudge =  F
+18: l_rtm_nudge =  F
+18: l_tke_aniso =  T
+18: l_vert_avg_closure =  T
+18: l_trapezoidal_rule_zt =  T
+18: l_trapezoidal_rule_zm =  T
+18: l_call_pdf_closure_twice =  T
+18: l_standard_term_ta =  F
+18: l_use_cloud_cover =  T
+18: l_diagnose_correlations =  F
+18: l_calc_w_corr =  F
+18: l_const_Nc_in_cloud =  F
+18: l_fix_w_chi_eta_correlations =  T
+18: l_stability_correct_tau_zm =  T
+18: l_damp_wp2_using_em =  F
+18: l_do_expldiff_rtm_thlm =  T
+18: l_Lscale_plume_centered =  F
+18: l_diag_Lscale_from_tau =  F
+18: l_use_ice_latent =  F
+18: l_use_C7_Richardson =  F
+18: l_use_C11_Richardson =  F
+18: l_brunt_vaisala_freq_moist =  F
+18: l_use_thvm_in_bv_freq =  F
+18: l_rcm_supersat_adj =  F
+18: l_single_C2_Skw =  F
+18: l_damp_wp3_Skw_squared =  F
+18: l_prescribed_avg_deltaz =  F
+18: l_update_pressure =  F
+35: l_use_precip_frac =  T
+35: l_predict_upwp_vpwp =  F
+35: l_min_wp2_from_corr_wx =  F
+35: l_min_xp2_from_corr_wx =  F
+35: l_C2_cloud_frac =  F
+35: l_diffuse_rtm_and_thlm =  F
+35: l_stability_correct_Kh_N2_zm =  F
+35: l_calc_thlp2_rad =  T
+35: l_upwind_wpxp_ta =  F
+35: l_upwind_xpyp_ta =  T
+35: l_upwind_xm_ma =  T
+35: l_uv_nudge =  F
+35: l_rtm_nudge =  F
+35: l_tke_aniso =  T
+35: l_vert_avg_closure =  T
+35: l_trapezoidal_rule_zt =  T
+35: l_trapezoidal_rule_zm =  T
+35: l_call_pdf_closure_twice =  T
+35: l_standard_term_ta =  F
+35: l_use_cloud_cover =  T
+35: l_diagnose_correlations =  F
+35: l_calc_w_corr =  F
+35: l_const_Nc_in_cloud =  F
+35: l_fix_w_chi_eta_correlations =  T
+35: l_stability_correct_tau_zm =  T
+35: l_damp_wp2_using_em =  F
+35: l_do_expldiff_rtm_thlm =  T
+35: l_Lscale_plume_centered =  F
+35: l_diag_Lscale_from_tau =  F
+35: l_use_ice_latent =  F
+35: l_use_C7_Richardson =  F
+35: l_use_C11_Richardson =  F
+35: l_brunt_vaisala_freq_moist =  F
+35: l_use_thvm_in_bv_freq =  F
+35: l_rcm_supersat_adj =  F
+35: l_single_C2_Skw =  F
+35: l_damp_wp3_Skw_squared =  F
+35: l_prescribed_avg_deltaz =  F
+35: l_update_pressure =  F
+31: l_use_precip_frac =  T
+31: l_predict_upwp_vpwp =  F
+31: l_min_wp2_from_corr_wx =  F
+31: l_min_xp2_from_corr_wx =  F
+31: l_C2_cloud_frac =  F
+31: l_diffuse_rtm_and_thlm =  F
+31: l_stability_correct_Kh_N2_zm =  F
+31: l_calc_thlp2_rad =  T
+31: l_upwind_wpxp_ta =  F
+31: l_upwind_xpyp_ta =  T
+31: l_upwind_xm_ma =  T
+31: l_uv_nudge =  F
+31: l_rtm_nudge =  F
+31: l_tke_aniso =  T
+31: l_vert_avg_closure =  T
+31: l_trapezoidal_rule_zt =  T
+31: l_trapezoidal_rule_zm =  T
+31: l_call_pdf_closure_twice =  T
+31: l_standard_term_ta =  F
+31: l_use_cloud_cover =  T
+31: l_diagnose_correlations =  F
+31: l_calc_w_corr =  F
+31: l_const_Nc_in_cloud =  F
+31: l_fix_w_chi_eta_correlations =  T
+31: l_stability_correct_tau_zm =  T
+31: l_damp_wp2_using_em =  F
+31: l_do_expldiff_rtm_thlm =  T
+31: l_Lscale_plume_centered =  F
+31: l_diag_Lscale_from_tau =  F
+31: l_use_ice_latent =  F
+31: l_use_C7_Richardson =  F
+31: l_use_C11_Richardson =  F
+31: l_brunt_vaisala_freq_moist =  F
+31: l_use_thvm_in_bv_freq =  F
+31: l_rcm_supersat_adj =  F
+31: l_single_C2_Skw =  F
+31: l_damp_wp3_Skw_squared =  F
+31: l_prescribed_avg_deltaz =  F
+31: l_update_pressure =  F
+12: l_use_precip_frac =  T
+12: l_predict_upwp_vpwp =  F
+12: l_min_wp2_from_corr_wx =  F
+12: l_min_xp2_from_corr_wx =  F
+12: l_C2_cloud_frac =  F
+12: l_diffuse_rtm_and_thlm =  F
+12: l_stability_correct_Kh_N2_zm =  F
+12: l_calc_thlp2_rad =  T
+12: l_upwind_wpxp_ta =  F
+12: l_upwind_xpyp_ta =  T
+12: l_upwind_xm_ma =  T
+12: l_uv_nudge =  F
+12: l_rtm_nudge =  F
+12: l_tke_aniso =  T
+12: l_vert_avg_closure =  T
+12: l_trapezoidal_rule_zt =  T
+12: l_trapezoidal_rule_zm =  T
+12: l_call_pdf_closure_twice =  T
+12: l_standard_term_ta =  F
+12: l_use_cloud_cover =  T
+12: l_diagnose_correlations =  F
+12: l_calc_w_corr =  F
+12: l_const_Nc_in_cloud =  F
+12: l_fix_w_chi_eta_correlations =  T
+12: l_stability_correct_tau_zm =  T
+12: l_damp_wp2_using_em =  F
+12: l_do_expldiff_rtm_thlm =  T
+12: l_Lscale_plume_centered =  F
+12: l_diag_Lscale_from_tau =  F
+12: l_use_ice_latent =  F
+12: l_use_C7_Richardson =  F
+12: l_use_C11_Richardson =  F
+12: l_brunt_vaisala_freq_moist =  F
+12: l_use_thvm_in_bv_freq =  F
+12: l_rcm_supersat_adj =  F
+12: l_single_C2_Skw =  F
+12: l_damp_wp3_Skw_squared =  F
+12: l_prescribed_avg_deltaz =  F
+12: l_update_pressure =  F
+17: l_use_precip_frac =  T
+17: l_predict_upwp_vpwp =  F
+17: l_min_wp2_from_corr_wx =  F
+17: l_min_xp2_from_corr_wx =  F
+17: l_C2_cloud_frac =  F
+17: l_diffuse_rtm_and_thlm =  F
+17: l_stability_correct_Kh_N2_zm =  F
+17: l_calc_thlp2_rad =  T
+17: l_upwind_wpxp_ta =  F
+17: l_upwind_xpyp_ta =  T
+17: l_upwind_xm_ma =  T
+17: l_uv_nudge =  F
+17: l_rtm_nudge =  F
+17: l_tke_aniso =  T
+17: l_vert_avg_closure =  T
+17: l_trapezoidal_rule_zt =  T
+17: l_trapezoidal_rule_zm =  T
+17: l_call_pdf_closure_twice =  T
+17: l_standard_term_ta =  F
+17: l_use_cloud_cover =  T
+17: l_diagnose_correlations =  F
+17: l_calc_w_corr =  F
+17: l_const_Nc_in_cloud =  F
+17: l_fix_w_chi_eta_correlations =  T
+17: l_stability_correct_tau_zm =  T
+17: l_damp_wp2_using_em =  F
+17: l_do_expldiff_rtm_thlm =  T
+17: l_Lscale_plume_centered =  F
+17: l_diag_Lscale_from_tau =  F
+17: l_use_ice_latent =  F
+17: l_use_C7_Richardson =  F
+17: l_use_C11_Richardson =  F
+17: l_brunt_vaisala_freq_moist =  F
+17: l_use_thvm_in_bv_freq =  F
+17: l_rcm_supersat_adj =  F
+17: l_single_C2_Skw =  F
+17: l_damp_wp3_Skw_squared =  F
+17: l_prescribed_avg_deltaz =  F
+17: l_update_pressure =  F
+1: Opened existing file 
+1: /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/ub/clim_p_trop.nc
+1:           4
+0:calcsize j,iq,jac, lsfrm,lstoo  1  1  1  26  21
+0:calcsize j,iq,jac, lsfrm,lstoo  1  1  2  26  21
+0:calcsize j,iq,jac, lsfrm,lstoo  1  2  1  22  15
+0:calcsize j,iq,jac, lsfrm,lstoo  1  2  2  22  15
+0:calcsize j,iq,jac, lsfrm,lstoo  1  3  1  24  17
+0:calcsize j,iq,jac, lsfrm,lstoo  1  3  2  24  17
+0:calcsize j,iq,jac, lsfrm,lstoo  1  4  1  25  20
+0:calcsize j,iq,jac, lsfrm,lstoo  1  4  2  25  20
+0:calcsize j,iq,jac, lsfrm,lstoo  1  5  1  23  19
+0:calcsize j,iq,jac, lsfrm,lstoo  1  5  2  23  19
+0:calcsize j,iq,jac, lsfrm,lstoo  2  1  1  21  26
+0:calcsize j,iq,jac, lsfrm,lstoo  2  1  2  21  26
+0:calcsize j,iq,jac, lsfrm,lstoo  2  2  1  15  22
+0:calcsize j,iq,jac, lsfrm,lstoo  2  2  2  15  22
+0:calcsize j,iq,jac, lsfrm,lstoo  2  3  1  17  24
+0:calcsize j,iq,jac, lsfrm,lstoo  2  3  2  17  24
+0:calcsize j,iq,jac, lsfrm,lstoo  2  4  1  20  25
+0:calcsize j,iq,jac, lsfrm,lstoo  2  4  2  20  25
+0:calcsize j,iq,jac, lsfrm,lstoo  2  5  1  19  23
+0:calcsize j,iq,jac, lsfrm,lstoo  2  5  2  19  23
+0:GPTLprint_memusage: Using Kbytesperpage=4
+0:  sysmem size=67311.1 MB rss=534.0 MB share=50.4 MB text=37.8 MB datastack=0.0 MB
+1: Opened file regr_energy_QPC6_mpasa120_mpasa120.cam.h0.0001-01-01-00000.nc
+1:  to write           4
+1: Opened file regr_energy_QPC6_mpasa120_mpasa120.cam.h1.0001-01-01-00000.nc
+1:  to write           5
+1: Opened file regr_energy_QPC6_mpasa120_mpasa120.cam.r.0001-01-01-03600.nc
+1:  to write           6
+1: Opened file regr_energy_QPC6_mpasa120_mpasa120.cam.rs.0001-01-01-03600.nc
+1:  to write           4

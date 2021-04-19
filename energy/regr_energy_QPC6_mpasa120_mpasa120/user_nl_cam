@@ -1,0 +1,21 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+ 
+drydep_srf_file = '/glade/p/cesmdata/inputdata/atm/cam/chem/trop_mam/atmsrf_mpasa120_c090720.nc'
+avgflag_pertape(1) = 'I'
+avgflag_pertape(2) = 'I'
+avgflag_pertape(3) = 'I'
+nhtfrq             = 1,1,0,0,0
+empty_htapes       = .true.
+ndens              = 2,1,2,2                                            
+fincl1 = 'TEINP','TEOUT','TEFIX','EFIX','DTCORE','PS','U','T','Q','PRECT','OMEGA500'
+fincl2 = 'WV_pBF','SE_pBF','KE_pBF',  
+         'WV_pBP','SE_pBP','KE_pBP',  
+         'WV_pAP','SE_pAP','KE_pAP',  
+         'WV_pAM','SE_pAM','KE_pAM',  
+         'WV_dDP','SE_dDP','KE_dDP',  
+         'WV_dPD','SE_dPD','KE_dPD',  
+         'WV_dDM','SE_dDM','KE_dDM',  
+         'WV_dBD','SE_dBD','KE_dBD',  
+         'WV_dED','SE_dED','KE_dED',  
+         'WV_dBF','SE_dBF','KE_dBF'   
