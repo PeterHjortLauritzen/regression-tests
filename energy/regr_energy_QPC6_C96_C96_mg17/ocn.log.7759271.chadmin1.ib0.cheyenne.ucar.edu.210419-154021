@@ -1,0 +1,64 @@
+(docn_comp_init)  decomp     = 1d
+(docn_comp_init)  restfilm   = undefined
+(docn_comp_init)  restfils   = undefined
+(docn_comp_init)  force_prognostic_true =  F
+  sst_constant_value    =   -1.00000000000000     
+(shr_strdata_readnml) reading input namelist file: docn_in
+(docn_comp_init)  docn datamode = SST_AQUAPANAL
+(shr_strdata_init)  Resetting the component domain mask and frac to 1
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SDOCN data
+(shr_strdata_print) dataMode    = SST_AQUAP3
+(shr_strdata_print) domainFile  = /glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.C96_gx1v7.181018.nc
+(shr_strdata_print) nxg         =  55296
+(shr_strdata_print) nyg         =      1
+(shr_strdata_print) nzg         =     -1
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) io_type     =      5
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      0
+(shr_strdata_print) pio_iotype  =      5
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+(docn_comp_init)  initialize gsmaps
+(docn_comp_init) copy domains
+(docn_comp_init) allocate AVs
+(docn_comp_run) ocn: model date    10101       0s
+(docn_comp_init) docn_comp_init done
+ initial diag:AV
+(mct_aVect_info) local size =      144
+(mct_aVect_info) rList = So_t:So_s:So_u:So_v:So_dhdx:So_dhdy:So_bldepth:So_fswpen:Fioo_q
+(mct_aVect_info) l min/max   2.791E+02  2.868E+02  So_t
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_s
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_u
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_v
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_dhdx
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_dhdy
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_bldepth
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_fswpen
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  Fioo_q
+(docn_comp_init) docn_comp_init done
+(docn_comp_run)  writing regr_energy_QPC6_C96_C96_mg17.docn.rs1.0001-01-01-03600.bin   10101    3600s
+(shr_stream_restWrite) case name        : regr_energy_QPC6_C96_C96_mg17
+(shr_stream_restWrite) case description : SDOCN strdata
+(shr_stream_restWrite) File created     : 2021-04-19 15:40:58
+(shr_stream_restWrite) Number of streams     0
+(docn_comp_run) ocn: model date    10101    3600s
+ run diag:AV
+(mct_aVect_info) local size =      144
+(mct_aVect_info) rList = So_t:So_s:So_u:So_v:So_dhdx:So_dhdy:So_bldepth:So_fswpen:Fioo_q
+(mct_aVect_info) l min/max   2.791E+02  2.868E+02  So_t
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_s
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_u
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_v
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_dhdx
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_dhdy
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_bldepth
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  So_fswpen
+(mct_aVect_info) l min/max   0.000E+00  0.000E+00  Fioo_q
+(docn_comp_final) -------------------------------------------------------------------------
+(docn_comp_final) ocn: end of main integration loop
+(docn_comp_final) -------------------------------------------------------------------------

@@ -52,6 +52,9 @@ cd $scratch/$USER/$caze
 ./xmlchange DOUT_S=FALSE
 ./xmlchange NTHRDS=$NTHRDS
 ./xmlchange TIMER_LEVEL=10
+if ($res == "C96_C96_mg17") then
+  ./xmlchange --append CAM_CONFIG_OPTS="-cppdefs -DCALC_ENERGY"
+endif
 if ($res == "mpasa120_mpasa120") then
   if ($cset == "QPC6") then
     ./xmlchange OCN_DOMAIN_FILE=domain.ocn.mpasa120_gx1v7.201215.nc
@@ -130,6 +133,18 @@ if ( $res == "mpasa120_mpasa120") then
   echo "         'WV_dED','SE_dED','KE_dED',  ">> user_nl_cam
   echo "         'WV_dBF','SE_dBF','KE_dBF'   ">> user_nl_cam
 endif
+if ($res == "C96_C96_mg17") then
+  echo " fincl2 =  'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',">> user_nl_cam
+  echo "           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',">> user_nl_cam
+  echo "           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',">> user_nl_cam
+  echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',">> user_nl_cam
+  echo "           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',">> user_nl_cam
+  echo "           'WV_dAF','WL_dAF','WI_dAF','SE_dAF','KE_dAF',">> user_nl_cam
+  echo "           'WV_dAD','WL_dAD','WI_dAD','SE_dAD','KE_dAD',">> user_nl_cam
+  echo "           'WV_dAR','WL_dAR','WI_dAR','SE_dAR','KE_dAR',">> user_nl_cam
+  echo "           'WV_dBF','WL_dBF','WI_dBF','SE_dBF','KE_dBF' ">> user_nl_cam
+endif
+
 #echo "inithist           = 'MONTHLY'"   >> user_nl_cam
 source $pw/machine_settings.sh cleanup
 qcmd -- ./case.build
