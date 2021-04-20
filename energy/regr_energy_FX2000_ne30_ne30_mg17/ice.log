@@ -1,0 +1,596 @@
+ --------------------------------
+   CICE model diagnostic output  
+ --------------------------------
+  
+ WARNING: tr_pond_lvl=T and hs0/=0
+ WARNING: Setting hs0=0
+  Document ice_in namelist parameters:
+  ==================================== 
+  
+  runid                     = regr_energy_FX2000_ne30_ne30_mg17
+  runtype                   =  initial
+  days_per_year             =      365
+  use_leap_years            =        F
+  year_init                 =        0
+  istep0                    =        0
+  dt                        =      300.00
+  npt                       =    99999
+  diagfreq                  =       24
+  print_global              =        T
+  print_points              =        F
+  bfbflag                   =        F
+  histfreq                  =        m     x     x     x     x
+  histfreq_n                =        1     0     0     0     0
+  hist_avg                  =        T
+  history_precision     = 4
+  history_dir               = ./
+  history_file              = regr_energy_FX2000_ne30_ne30_mg17.cice.h
+  dumpfreq                  =        x
+  dumpfreq_n                =        1
+  dump_last                 =        F
+  restart                   =        F
+  restart_dir               = ./
+  restart_ext               =  F
+  restart_format            = pio
+  lcdf64                    =  T
+  restart_file              = regr_energy_FX2000_ne30_ne30_mg17.cice.r
+  pointer_file              = ./rpointer.ice
+  use_restart_time          =  T
+  ice_ic                    = default
+  atm2ice_fmap_is_pos_def   =  T
+  atm2ice_smap_is_pos_def   =  T
+  grid_type                 = latlon
+  grid_file                 = 
+ /glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.ne30_gx1v7.171003.nc
+  gridcpl_file              = unknown_gridcpl_file
+  kmt_file                  = 
+ /glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.ne30_gx1v7.171003.nc
+  kitd                      =        0
+  kcatbound                 =        0
+  kdyn                      =        0
+  ndtd                      =        1
+  ndte                      =      120
+  revised_evp               =        F
+  kstrength                 =        0
+  krdg_partic               =        1
+  krdg_redist               =        1
+  mu_rdg                    =        4.00
+  advection                 =    remap
+  shortwave                 =     dEdd
+  R_ice                     =        0.00
+  R_pnd                     =        0.00
+  R_snw                     =        1.25
+  dT_mlt                    =        1.50
+  rsnw_mlt                  =     1500.00
+  kalg                      =        0.00
+  hp1                       =        0.01
+  hs0                       =        0.00
+  rfracmin                  =        0.15
+  rfracmax                  =        0.85
+  hs1                       =        0.03
+  dpscale                   =        0.00
+  frzpnd                    =     cesm
+  ktherm                    =        2
+  a_rapid_mode              =    0.000500
+  Rac_rapid_mode            =   10.000000
+  aspect_rapid_mode         =    1.000000
+  dSdt_slow_mode            =   -0.000000
+  phi_c_slow_mode           =    0.050000
+  phi_i_mushy               =    0.850000
+  atmbndy                   =  default
+  formdrag                  =        F
+  highfreq                  =        T
+  natmiter                  =        5
+  calc_strair               =        T
+  calc_Tsfc                 =        T
+  fyear_init                =     1900
+  ycycle                    =        1
+  atm_data_type             = default
+  update_ocn_f              =        F
+  l_mpond_fresh             =        F
+  ustar_min                 =    0.005000
+  fbot_xfer_type            = constant
+  oceanmixed_ice            =        F
+  tfrz_option               = mushy
+  sss_data_type             = default
+  sst_data_type             = default
+  restore_ice               =        F
+  
+Diagnostic point 1: lat, lon =   90.00    0.00
+Diagnostic point 2: lat, lon =  -65.00  -45.00
+  tr_iage                   =        F
+  restart_age               =        F
+  tr_FY                     =        F
+  restart_FY                =        F
+  tr_lvl                    =        T
+  restart_lvl               =        F
+  tr_pond_cesm              =        F
+  restart_pond_cesm         =        F
+  tr_pond_lvl               =        T
+  restart_pond_lvl          =        F
+  tr_pond_topo              =        F
+  restart_pond_topo         =        F
+  tr_aero                   =        F
+  restart_aero              =        F
+  tr_iso                    =        F
+  restart_iso               =        F
+  
+                      ntrcr =       25
+  
+                    nt_sice =       13
+                    nt_qice =        2
+                    nt_qsno =       10
+  
+                         nilyr       8
+                         nslyr       3
+  
+  
+  tr_brine                  =        F
+  skl_bgc                   =        F
+
+Domain Information
+
+  Horizontal domain: nx =  48602
+                     ny =      1
+  No. of categories: nc =      1
+  No. of ice layers: ni =      8
+  No. of snow layers:ns =      3
+  Processors:  total    =    450
+  Processor shape:       square-ice
+  Distribution type:     roundrobin
+  Distribution weight:     latitude
+  ew_boundary_type:          cyclic
+  ns_boundary_type:            open
+  maskhalo_dyn          =      T
+  maskhalo_remap        =      T
+  maskhalo_bound        =      T
+  max_blocks =                 3
+  Number of ghost cells:       1
+
+ ice: total number of blocks is        1279
+  Block size:  nx_block =     40
+               ny_block =      3
+  min, max, sum =  0.000000000000000E+000   360.000000000000     
+   8780220.00000001     
+  min, max, sum =  -90.0000000000000        90.0000000000000     
+  2.398934384473250E-010
+  min, max, sum =  4.396773732793620E-005  4.758650684751393E-004
+   12.5663706143591     
+  min, max, sum =  0.000000000000000E+000   1.00000000000000     
+   35987.0000000000     
+  min, max, sum =  0.000000000000000E+000   1.00000000000000     
+   34404.0988695758     
+  
+ The following variables will be written to the history tape: 
+          description                     units             variable  frequency   x
+ grid cell mean snow fraction              1                 snowfrac     m       1
+ upward solar flux                         W/m2              fswup        m       1
+  
+ arlx, brlx   86.4000000000000        120.000000000000     
+ Se, Sv, xi  3.718064012359120E+031  8.000000000000001E+060
+  2.151657414559676E+029
+ dt  =    300.000000000000     
+ dte =    2.50000000000000     
+ tdamp =   108.000000000000     
+  
+ hin_max(n-1) < Cat n < hin_max(n)
+  1.000000000000000E-002  < Cat            1  <    1.71428184468263     
+  
+  
+istep1:         0    idate:       101    sec:         0
+ tracer        index      depend        type has_dependents
+    hi             1           0           1 T
+    hs             2           0           1 T
+ nt_Tsfc           3           0           1 F
+ nt_qice           4           1           2 F
+ nt_qsno          12           2           2 F
+ nt_sice          15           1           2 F
+ nt_alvl          23           0           1 T
+ nt_vlvl          24           1           2 F
+ nt_apnd          25          23           2 T
+ nt_hpnd          26          25           3 F
+ nt_ipnd          27          25           3 F
+  
+  Find indices of diagnostic points 
+  
+ found point   1
+   lat    lon   TLAT   TLON     i     j   block  task
+  90.0    0.0   90.0    0.0    19     2     3   272
+  
+ found point   2
+   lat    lon   TLAT   TLON     i     j   block  task
+ -65.0  -45.0  -69.8    2.3    13     2     3   113
+ ice_init_mct tfrz_option = mushy
+ ice_init_mct inst_name   = ICE
+ ice_init_mct inst_index  =            1
+ ice_init_mct inst_suffix = 
+ ice_init_mct flux_convergence =   1.000000000000000E-002
+ ice_init_mct flux_convergence_max_iteration =            5
+ ice_init_mct idate from sync clock =        10101
+ ice_init_mct   tod from sync clock =            0
+ ice_init_mct resetting idate to match sync clock
+ ice_init_mct curr_ymd =        10101
+ ice_init_mct cice year_init =            0
+ ice_init_mct cice start date =        10101
+ ice_init_mct cice start ymds =            1           1           1           0
+  
+istep1:         0    idate:     10101    sec:         0
+  
+ This is the prescribed ice coverage option.
+   stream_year_first  =            0
+   stream_year_last   =            0
+   model_year_align   =            1
+   stream_fldVarName  = ice_cov
+   stream_fldFileName = 
+ /glade/p/cesmdata/cseg/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_2000climo_c1805
+ 11.nc           1
+   stream_domTvarName = time
+   stream_domXvarName = xc
+   stream_domYvarName = yc
+   stream_domFileName = 
+ /glade/p/cesmdata/cseg/inputdata/ocn/docn7/domain.ocn.1x1.111007.nc
+   stream_mapread     = NOT_SET
+   stream_fillalgo    = none
+  
+ (shr_strdata_init_streams)  stream            1
+ (shr_strdata_init_streams)  filePath =            1 
+ (shr_strdata_init_streams)  fileName =            1 
+ /glade/p/cesmdata/cseg/inputdata/ocn/docn7/domain.ocn.1x1.111007.nc
+ (shr_strdata_init_streams)  timeName =            1 time
+ (shr_strdata_init_streams)   lonName =            1 xc
+ (shr_strdata_init_streams)   latName =            1 yc
+ (shr_strdata_init_streams)   hgtName =            1 undefined
+ (shr_strdata_init_streams)  maskName =            1 mask
+ (shr_strdata_init_streams)  areaName =            1 area
+(shr_strdata_init_mapping)  calling shr_dmodel_mapSet for remap
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SPRESICE data
+(shr_strdata_print) dataMode    = NULL
+(shr_strdata_print) domainFile  = null
+(shr_strdata_print) nxg         =  48602
+(shr_strdata_print) nyg         =      1
+(shr_strdata_print) nzg         =      1
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) io_type     =      1
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print) pio_iotype  =      1
+(shr_strdata_print)   streams ( 1) = null
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 1) =    360
+(shr_strdata_print)   strnyg  ( 1) =    180
+(shr_strdata_print)   strnzg  ( 1) =     -1
+(shr_strdata_print)   dofill  ( 1) =  F
+(shr_strdata_print)   fillalgo( 1) = none
+(shr_strdata_print)   fillmask( 1) = nomask
+(shr_strdata_print)   fillread( 1) = NOT_SET
+(shr_strdata_print)   fillwrit( 1) = NOT_SET
+(shr_strdata_print)   domaps  ( 1) =  T
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   mapmask ( 1) = dstmask
+(shr_strdata_print)   mapread ( 1) = NOT_SET
+(shr_strdata_print)   mapwrit ( 1) = NOT_SET
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)   readmode( 1) = single
+(shr_strdata_print)  
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+ ice_run_mct cice istep, nextsw_cday =            0   1.04513888888889     
+(shr_dmodel_readstrm) open   : /glade/p/cesmdata/cseg/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_2000climo_c180511.nc
+(shr_dmodel_readstrm) file lb: /glade/p/cesmdata/cseg/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_2000climo_c180511.nc      12
+(shr_dmodel_readstrm) file ub: /glade/p/cesmdata/cseg/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_2000climo_c180511.nc       1
+ ice_run_mct cice istep, nextsw_cday =            1  -1.00000000000000     
+ (ice_pio_wopen)  create file 
+ ./regr_energy_FX2000_ne30_ne30_mg17.cice.r.0001-01-01-00600.nc
+ Writing ./regr_energy_FX2000_ne30_ne30_mg17.cice.r.0001-01-01-00600.nc
+ Parallel restart file write: aicen
+  min and max =  0.000000000000000E+000   1.00000000000000     
+  sum =   1748.02934469003     
+ Parallel restart file write: vicen
+  min and max =  0.000000000000000E+000   2.00000000000000     
+  sum =   2970.30910118390     
+ Parallel restart file write: vsnon
+  min and max =  0.000000000000000E+000  0.199997707196424     
+  sum =   276.600793684838     
+ Parallel restart file write: Tsfcn
+  min and max =  -43.5434115468049       0.000000000000000E+000
+  sum =  -128775.385905317     
+ Parallel restart file write: sice001
+  min and max =  0.000000000000000E+000  0.221252464438948     
+  sum =   3408.69870850692     
+ Parallel restart file write: sice002
+  min and max =  0.000000000000000E+000   1.14525621008948     
+  sum =   17646.8742885874     
+ Parallel restart file write: sice003
+  min and max =  0.000000000000000E+000   2.02657364351097     
+  sum =   31227.8943859455     
+ Parallel restart file write: sice004
+  min and max =  0.000000000000000E+000   2.60743222194326     
+  sum =   40179.0840277787     
+ Parallel restart file write: sice005
+  min and max =  0.000000000000000E+000   2.93355042154641     
+  sum =   45204.4771309047     
+ Parallel restart file write: sice006
+  min and max =  0.000000000000000E+000   3.09856776303736     
+  sum =   47747.4279949042     
+ Parallel restart file write: sice007
+  min and max =  0.000000000000000E+000   3.17243495771669     
+  sum =   48885.8150877673     
+ Parallel restart file write: sice008
+  min and max =  0.000000000000000E+000   3.20421019904951     
+  sum =   49275.8015580888     
+ Parallel restart file write: qice001
+  min and max =  -309669753.037437       0.000000000000000E+000
+  sum =  -827810495222.419     
+ Parallel restart file write: qice002
+  min and max =  -300170666.525236       0.000000000000000E+000
+  sum =  -769240453917.360     
+ Parallel restart file write: qice003
+  min and max =  -292752995.072772       0.000000000000000E+000
+  sum =  -746882074040.462     
+ Parallel restart file write: qice004
+  min and max =  -287872514.054272       0.000000000000000E+000
+  sum =  -746321060790.162     
+ Parallel restart file write: qice005
+  min and max =  -285132534.876200       0.000000000000000E+000
+  sum =  -754335099935.406     
+ Parallel restart file write: qice006
+  min and max =  -283746087.043426       0.000000000000000E+000
+  sum =  -764539130805.704     
+ Parallel restart file write: qice007
+  min and max =  -283125458.960931       0.000000000000000E+000
+  sum =  -774452993681.166     
+ Parallel restart file write: qice008
+  min and max =  -282904903.020531       0.000000000000000E+000
+  sum =  -783297165421.430     
+ Parallel restart file write: qsno001
+  min and max =  -113593553.515569       0.000000000000000E+000
+  sum =  -1699270106399.95     
+ Parallel restart file write: qsno002
+  min and max =  -110367634.409573       0.000000000000000E+000
+  sum =  -1697168938182.16     
+ Parallel restart file write: qsno003
+  min and max =  -110236366.101371       0.000000000000000E+000
+  sum =  -1697101605918.97     
+ Parallel restart file write: uvel
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: vvel
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: coszen
+  min and max = -0.985994752654181       0.999976186885952     
+  sum =   3850.94601769528     
+ Parallel restart file write: scale_factor
+  min and max =  0.000000000000000E+000   1113.23614625090     
+  sum =   9527306.58159214     
+ Parallel restart file write: swvdr
+  min and max =  0.000000000000000E+000   505.410323327759     
+  sum =   2985006.85814947     
+ Parallel restart file write: swvdf
+  min and max =  0.000000000000000E+000   432.961874519468     
+  sum =   2073199.02387071     
+ Parallel restart file write: swidr
+  min and max =  0.000000000000000E+000   539.464153516506     
+  sum =   3405241.24922387     
+ Parallel restart file write: swidf
+  min and max =  0.000000000000000E+000   278.486734392678     
+  sum =   1168656.45194278     
+ Parallel restart file write: strocnxT
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: strocnyT
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressp_1
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressp_3
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressp_2
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressp_4
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressm_1
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressm_3
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressm_2
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stressm_4
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stress12_1
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stress12_3
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stress12_2
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: stress12_4
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: iceumask
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: alvl
+  min and max =   1.00000000000000        1.00000000000000     
+  sum =   48602.0000000000     
+ Parallel restart file write: vlvl
+  min and max =   1.00000000000000        1.00000000000000     
+  sum =   48602.0000000000     
+ Parallel restart file write: apnd
+  min and max =  0.000000000000000E+000   1.00000000000000     
+  sum =   62.9565197151620     
+ Parallel restart file write: hpnd
+  min and max =  0.000000000000000E+000  5.647228741714016E-002
+  sum =   27.4815521819071     
+ Parallel restart file write: ipnd
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: fsnow
+  min and max =  0.000000000000000E+000  5.970756836918372E-004
+  sum =  6.319855482855405E-002
+ Parallel restart file write: dhs
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Parallel restart file write: ffrac
+  min and max =  0.000000000000000E+000  0.000000000000000E+000
+  sum =  0.000000000000000E+000
+ Restart read/written            2   31536600.0000000     
+  0.000000000000000E+000
+
+Timing information:
+
+Timer   1:     Total       0.17 seconds
+  Timer stats (node): min =        0.17 seconds
+                      max =        0.17 seconds
+                      mean=        0.17 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   2:  TimeLoop       0.17 seconds
+  Timer stats (node): min =        0.17 seconds
+                      max =        0.17 seconds
+                      mean=        0.17 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   3:  Dynamics       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   4: Advection       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   5:    Column       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   6:    Thermo       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   7: Shortwave       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   8: Meltponds       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer   9:   Ridging       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  10:  Cat Conv       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  11:  Coupling       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  12: ReadWrite       0.13 seconds
+  Timer stats (node): min =        0.13 seconds
+                      max =        0.13 seconds
+                      mean=        0.13 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  13:     Diags       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  14:   History       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  15:     Bound       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  16:       BGC       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  17:  Cpl-recv       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  18:  Rcv->Snd       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  19:  Cpl-Send       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+Timer  20:  Snd->Rcv       0.00 seconds
+  Timer stats (node): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds
+  Timer stats(block): min =        0.00 seconds
+                      max =        0.00 seconds
+                      mean=        0.00 seconds

@@ -1,0 +1,9 @@
+&drydep_inparm
+  drydep_list = 'CH2O', 'CH3OOH', 'CO', 'DMS', 'H2O2', 'H2SO4', 'HNO3',
+      'HO2NO2', 'N2O5', 'NO', 'NO2', 'O3', 'SO2'
+/
+&megan_emis_nl
+  megan_factors_file = '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_78pft_c20161108.nc'
+  megan_mapped_emisfctrs = .false.
+  megan_specifier = 'CH2O = formaldehyde', 'CO = carbon_monoxide'
+/

@@ -114,7 +114,7 @@
 /
 &seq_infodata_inparm
   aoflux_grid = "ocn"
-  aqua_planet = .true.
+  aqua_planet = .false.
   aqua_planet_sst = 1
   atm_gnam = "0.9x1.25"
   bfbflag = .false.
@@ -126,7 +126,7 @@
   budget_ltend = 0
   budget_month = 1
   case_desc = "UNSET"
-  case_name = "regr_energy_QPC6_f09_f09_mg17"
+  case_name = "regr_energy_FX2000_f09_f09_mg17"
   cime_model = "cesm"
   coldair_outbreak_mod = .true.
   constant_zenith_deg = -1
@@ -174,7 +174,7 @@
   ice_gnam = "0.9x1.25"
   info_debug = 1
   iop_mode = .false.
-  lnd_gnam = "null"
+  lnd_gnam = "0.9x1.25"
   logfilepostfix = ".log"
   max_cplstep_time = 0.0
   mct_usealltoall = .false.
@@ -183,19 +183,19 @@
   model_version = "cam6_2_011-1320-g17f61a8"
   ocn_gnam = "0.9x1.25"
   ocn_surface_flux_scheme = 0
-  orb_eccen = 0.
+  orb_eccen = 1.e36
   orb_iyear = 2000
   orb_iyear_align = 2000
-  orb_mode = "fixed_parameters"
-  orb_mvelp = 0.
-  orb_obliq = 0.
+  orb_mode = "fixed_year"
+  orb_mvelp = 1.e36
+  orb_obliq = 1.e36
   outpathroot = "./"
   reprosum_allow_infnan = .false.
   reprosum_diffmax = -1.0e-8
   reprosum_recompute = .false.
   reprosum_use_ddpdd = .false.
   restart_file = "str_undefined"
-  rof_gnam = "null"
+  rof_gnam = "r05"
   run_barriers = .false.
   scmlat = -999.
   scmlon = -999.
@@ -215,7 +215,7 @@
   wv_sat_use_tables = .false.
 /
 &seq_timemgr_inparm
-  atm_cpl_dt = 1800
+  atm_cpl_dt = 300
   atm_cpl_offset = 0
   barrier_n = 1
   barrier_option = "never"
@@ -234,7 +234,7 @@
   esp_cpl_offset = 0
   esp_run_on_pause = .true.
   glc_avg_period = "yearly"
-  glc_cpl_dt = 1800
+  glc_cpl_dt = 300
   glc_cpl_offset = 0
   histavg_n = -999
   histavg_option = "never"
@@ -243,11 +243,11 @@
   history_option = "never"
   history_ymd = -999
   iac_cpl_offset = 0
-  ice_cpl_dt = 1800
+  ice_cpl_dt = 300
   ice_cpl_offset = 0
-  lnd_cpl_dt = 1800
+  lnd_cpl_dt = 300
   lnd_cpl_offset = 0
-  ocn_cpl_dt = 1800
+  ocn_cpl_dt = 300
   ocn_cpl_offset = 0
   pause_active_atm = .false.
   pause_active_cpl = .false.
@@ -263,7 +263,7 @@
   restart_n = 2
   restart_option = "nsteps"
   restart_ymd = -999
-  rof_cpl_dt = 1800
+  rof_cpl_dt = 10800
   start_tod = 0
   start_ymd = 00010101
   stop_n = 2
@@ -272,6 +272,6 @@
   tprof_n = -999
   tprof_option = "never"
   tprof_ymd = -999
-  wav_cpl_dt = 1800
+  wav_cpl_dt = 300
   wav_cpl_offset = 0
 /

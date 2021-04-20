@@ -4,10 +4,10 @@ if ( "$#argv" != 1) then
   echo "  -arg 1 res"
   echo "supported resolutions/dycores are"
   echo "se-cslam: ne30pg3_ne30pg3_mg17"
-  echo "se      : ne30_ne30_mg17"
-  echo "fv3     : C96_C96_mg17"
-  echo "fv      : f09_f09_mg17"
-  echo "mpas    : mpasa120_mpasa120"
+  echo "se      : ne30_ne30_mg17"         #not tested
+  echo "fv3     : C96_C96_mg17"           #not tested
+  echo "fv      : f09_f09_mg17"           #not tested
+  echo "mpas    : mpasa120_mpasa120"      #not tested
 endif
 set n = 1
 unset res
@@ -29,8 +29,7 @@ set pw=`pwd`
 set stopoption="nsteps"
 set steps="2"
 set walltime = "00:10:00"
-set cset="QPC6"
-#set cset="FX2000"
+set cset="FX2000"
 
 if ($res == "C96_C96_mg17") then
   set pecount="384"
@@ -94,6 +93,7 @@ else
   echo "avgflag_pertape(3) = 'I'" >> user_nl_cam
   echo "nhtfrq             = 1,1,0,0,0" >> user_nl_cam
 endif
+echo "mfilt = 10,10,10,10,10,10,10,10,10,10,10" >> user_nl_cam
 echo "empty_htapes       = .true."   >> user_nl_cam
 echo "ndens              = 2,1,2,2                                            ">> user_nl_cam
 echo "fincl1 = 'TEINP','TEOUT','TEFIX','EFIX','DTCORE','PS','U','T','Q','PRECT','OMEGA500'" >> user_nl_cam
@@ -146,7 +146,20 @@ if ($res == "C96_C96_mg17") then
   echo "           'WV_dAR','WL_dAR','WI_dAR','SE_dAR','KE_dAR',">> user_nl_cam
   echo "           'WV_dBF','WL_dBF','WI_dBF','SE_dBF','KE_dBF' ">> user_nl_cam
 endif
+#
+# get rid of error with SE: 
+#
+#    ERROR: 
+#    setup_interpolation_and_define_vector_complements: No meridional match for UTGW
+#    _TOTAL
 
+#
+echo "fincl3 = 'PS'">>user_nl_cam
+echo "fincl4 = 'PS'">>user_nl_cam
+echo "fincl5 = 'PS'">>user_nl_cam
+echo "fincl6 = 'PS'">>user_nl_cam
+echo "fincl7 = 'PS'">>user_nl_cam
+echo "fincl8 = 'PS'">>user_nl_cam
 #echo "inithist           = 'MONTHLY'"   >> user_nl_cam
 source $pw/machine_settings.sh cleanup
 qcmd -- ./case.build
