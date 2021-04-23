@@ -1,0 +1,50 @@
+63d62
+<  vertical coordinate physics : Moist pressure/mass vertical coordinate
+584,619c583,592
+<  Thermodynamic active species Q
+<     global index                    :            1
+<     thermodynamic_active_species_idx:            1
+<     cp                              :    1846.00000000000     
+<     cv                              :    1384.50000000000     
+<    
+<  Thermodynamic active species CLDLIQ
+<     global index                    :            2
+<     thermodynamic_active_species_idx:            2
+<     cp                              :    4188.00000000000     
+<     cv                              :    4188.00000000000     
+<     register phase (liquid or ice)  : liquid
+<    
+<  Thermodynamic active species CLDICE
+<     global index                    :            3
+<     thermodynamic_active_species_idx:            3
+<     cp                              :    2117.27000000000     
+<     cv                              :    2117.27000000000     
+<     register phase (liquid or ice)  : ice
+<    
+<  Thermodynamic active species RAINQM
+<     global index                    :            4
+<     thermodynamic_active_species_idx:            6
+<     cp                              :    4188.00000000000     
+<     cv                              :    4188.00000000000     
+<     register phase (liquid or ice)  : liquid
+<    
+<  Thermodynamic active species SNOWQM
+<     global index                    :            5
+<     thermodynamic_active_species_idx:            7
+<     cp                              :    2117.27000000000     
+<     cv                              :    2117.27000000000     
+<     register phase (liquid or ice)  : ice
+<    
+<  Enthalpy reference state           : ice
+<  vertical coordinate dycore   : Dry pressure/mass vertical coordinate
+---
+>  Thermodynamic active species Q           1           1   1846.00000000000     
+>    1384.50000000000     
+>  Thermodynamic active species CLDLIQ           2           2
+>    4188.00000000000        4188.00000000000     
+>  Thermodynamic active species CLDICE           3           3
+>    2117.27000000000        2117.27000000000     
+>  Thermodynamic active species RAINQM           4           6
+>    4188.00000000000        4188.00000000000     
+>  Thermodynamic active species SNOWQM           5           7
+>    2117.27000000000        2117.27000000000     

@@ -8,19 +8,25 @@ set ref_dir_git = "~/src/regression-tests/energy"
 #
 set ref_dir = "/glade/p/cgd/amp/pel/regression-tests/energy/"
 
-if ( "$#argv" != 1) then
+if ( "$#argv" != 2) then
   echo "Wrong number of arguments specified:"
-  echo "  -arg 1 res"
+  echo "  -arg 1 res COMPSET"
   echo "supported resolutions/dycores are"
   echo "se-cslam: ne30pg3_ne30pg3_mg17"
   echo "se      : ne30_ne30_mg17"
   echo "fv3     : C96_C96_mg17"
   echo "fv      : f09_f09_mg17"
   echo "mpas    : mpasa120_mpasa120"
+  echo " "
+  echo "COMPSET: QPC6 or FX2000"
 endif
 set n = 1
 unset res
 set res = "$argv[$n]" 
+set n = 2
+unset cset
+set cset = "$argv[$n]" 
+
 set caze=regr_energy_${cset}_${res}
 set hloop   = ("h0" "h1")
 #

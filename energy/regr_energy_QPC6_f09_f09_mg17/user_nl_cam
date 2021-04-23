@@ -11,4 +11,8 @@ fincl1 = 'TEINP','TEOUT','TEFIX','EFIX','DTCORE','PS','U','T','Q','PRECT','OMEGA
 fincl2 =   'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',  
            'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',  
            'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',  
-           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM'   
+           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',
+           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',  
+           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  
+           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  
+           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM' 

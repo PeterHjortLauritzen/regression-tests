@@ -54,7 +54,7 @@
  ESP              : pio_iotype =            6
 8 MB memory   alloc in MB is             8.00
 8 MB memory dealloc in MB is             7.80
-Memory block size conversion in bytes is          1002.94
+Memory block size conversion in bytes is          1001.51
 (seq_infodata_Init) 
  read seq_infodata_inparm namelist from: drv_in
 (shr_orb_params) Calculate characteristics of the orbit:
@@ -77,7 +77,7 @@ Memory block size conversion in bytes is          1002.94
 (seq_mct_drv) : ------------------------------------------------------------
 (seq_mct_drv) :                      MODEL cesm
 (seq_mct_drv) : ------------------------------------------------------------
-(seq_mct_drv) :                 DATE 04/20/21 TIME 11:04:12
+(seq_mct_drv) :                 DATE 04/23/21 TIME 12:46:15
 (seq_mct_drv) : ------------------------------------------------------------
   
   
@@ -966,7 +966,7 @@ Memory block size conversion in bytes is          1002.94
   
 (seq_mct_drv) : Model initialization complete 
   
- memory_write: model date =   00010101       0 memory =   99295.26 MB (highwater)        297.16 MB (usage)  (pe=    0 comps= cpl ATM LND ICE OCN GLC WAV IAC ESP)
+ memory_write: model date =   00010101       0 memory =  196063.32 MB (highwater)        297.50 MB (usage)  (pe=    0 comps= cpl ATM LND ICE OCN GLC WAV IAC ESP)
  Write restart file at   00010101    3600
 (seq_rest_write)  write rpointer file rpointer.drv
  (seq_io_wopen)  create file 
@@ -993,12 +993,12 @@ Memory block size conversion in bytes is          1002.94
 (seq_mct_drv): ===============          SUCCESSFUL TERMINATION OF CPL7-cesm ===============
 (seq_mct_drv): ===============        at YMD,TOD =   00010101    3600       ===============
 (seq_mct_drv): ===============  # simulated days (this run) =        0.042  ===============
-(seq_mct_drv): ===============  compute time (hrs)          =        0.001  ===============
-(seq_mct_drv): ===============  # simulated years / cmp-day =        1.929  ===============
-(seq_mct_drv): ===============  pes min memory highwater  (MB)   66473.914  ===============
-(seq_mct_drv): ===============  pes max memory highwater  (MB)   99633.215  ===============
-(seq_mct_drv): ===============  pes min memory last usage (MB)     286.523  ===============
-(seq_mct_drv): ===============  pes max memory last usage (MB)     597.539  ===============
+(seq_mct_drv): ===============  compute time (hrs)          =        0.002  ===============
+(seq_mct_drv): ===============  # simulated years / cmp-day =        1.575  ===============
+(seq_mct_drv): ===============  pes min memory highwater  (MB)  130983.992  ===============
+(seq_mct_drv): ===============  pes max memory highwater  (MB)  196452.227  ===============
+(seq_mct_drv): ===============  pes min memory last usage (MB)     286.777  ===============
+(seq_mct_drv): ===============  pes max memory last usage (MB)     648.797  ===============
 
 
 

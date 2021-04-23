@@ -1,3 +1,4 @@
+
 #!/bin/tcsh
 if ( "$#argv" != 1) then
   echo "Wrong number of arguments specified:"
@@ -102,6 +103,10 @@ if ( $res == "ne30pg3_ne30pg3_mg17" || $res == "ne30_ne30_mg17" ) then
   echo "           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',  ">> user_nl_cam
   echo "           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',  ">> user_nl_cam
   echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',  ">> user_nl_cam
+  echo "           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',  ">> user_nl_cam
+  echo "           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  ">> user_nl_cam
+  echo "           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  ">> user_nl_cam
+  echo "           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM',  ">> user_nl_cam
   echo "           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',  ">> user_nl_cam
   echo "           'WV_dAF','WL_dAF','WI_dAF','SE_dAF','KE_dAF',  ">> user_nl_cam
   echo "           'WV_dBD','WL_dBD','WI_dBD','SE_dBD','KE_dBD',  ">> user_nl_cam
@@ -120,14 +125,22 @@ if ( $res == "f09_f09_mg17" ) then
   echo "fincl2 =   'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',  ">> user_nl_cam
   echo "           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',  ">> user_nl_cam
   echo "           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',  ">> user_nl_cam
-  echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM'   ">> user_nl_cam
+  echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',  ">> user_nl_cam
+  echo "           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',  ">> user_nl_cam
+  echo "           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  ">> user_nl_cam
+  echo "           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  ">> user_nl_cam
+  echo "           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM'   ">> user_nl_cam
 
 endif
 if ( $res == "mpasa120_mpasa120") then
-  echo "fincl2 = 'WV_pBF','SE_pBF','KE_pBF',  ">> user_nl_cam
-  echo "         'WV_pBP','SE_pBP','KE_pBP',  ">> user_nl_cam
-  echo "         'WV_pAP','SE_pAP','KE_pAP',  ">> user_nl_cam
-  echo "         'WV_pAM','SE_pAM','KE_pAM',  ">> user_nl_cam
+  echo "fincl2 =   'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',  ">> user_nl_cam
+  echo "           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',  ">> user_nl_cam
+  echo "           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',  ">> user_nl_cam
+  echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',  ">> user_nl_cam
+  echo "           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',  ">> user_nl_cam
+  echo "           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  ">> user_nl_cam
+  echo "           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  ">> user_nl_cam
+  echo "           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM',  ">> user_nl_cam
   echo "         'WV_dDP','SE_dDP','KE_dDP',  ">> user_nl_cam
   echo "         'WV_dPD','SE_dPD','KE_dPD',  ">> user_nl_cam
   echo "         'WV_dDM','SE_dDM','KE_dDM',  ">> user_nl_cam
@@ -140,6 +153,10 @@ if ($res == "C96_C96_mg17") then
   echo "           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',">> user_nl_cam
   echo "           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',">> user_nl_cam
   echo "           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',">> user_nl_cam
+  echo "           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',">> user_nl_cam
+  echo "           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',">> user_nl_cam
+  echo "           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',">> user_nl_cam
+  echo "           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM',">> user_nl_cam
   echo "           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',">> user_nl_cam
   echo "           'WV_dAF','WL_dAF','WI_dAF','SE_dAF','KE_dAF',">> user_nl_cam
   echo "           'WV_dAD','WL_dAD','WI_dAD','SE_dAD','KE_dAD',">> user_nl_cam
