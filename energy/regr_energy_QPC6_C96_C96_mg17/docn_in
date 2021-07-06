@@ -7,7 +7,7 @@
 /
 &shr_strdata_nml
   datamode = "SST_AQUAP3"
-  domainfile = "/glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.C96_gx1v7.181018.nc"
+  domainfile = "/glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.ne30np4.pg3_gx1v7_170605.nc"
   dtlimit = 1.5e0
   fillalgo = "nn"
   fillmask = "nomask"

@@ -23,16 +23,21 @@
  empty_htapes		= .true.
  fincl1		= 'TEINP','TEOUT','TEFIX','EFIX','DTCORE','PS','U','T','Q','PRECT','OMEGA500'
  fincl2		= 'WV_pBF', 'WL_pBF', 'WI_pBF', 'SE_pBF', 'KE_pBF', 'WV_pBP', 'WL_pBP', 'WI_pBP', 'SE_pBP', 'KE_pBP', 'WV_pAP',
-         'WL_pAP', 'WI_pAP', 'SE_pAP', 'KE_pAP', 'WV_pAM', 'WL_pAM', 'WI_pAM', 'SE_pAM', 'KE_pAM', 'WV_zBF', 'WL_zBF',
-         'WI_zBF', 'SE_zBF', 'KE_zBF', 'WV_zBP', 'WL_zBP', 'WI_zBP', 'SE_zBP', 'KE_zBP', 'WV_zAP', 'WL_zAP', 'WI_zAP',
-         'SE_zAP', 'KE_zAP', 'WV_zAM', 'WL_zAM', 'WI_zAM', 'SE_zAM', 'KE_zAM', 'WV_dED', 'WL_dED', 'WI_dED', 'SE_dED',
-         'KE_dED', 'WV_dAF', 'WL_dAF', 'WI_dAF', 'SE_dAF', 'KE_dAF', 'WV_dAD', 'WL_dAD', 'WI_dAD', 'SE_dAD', 'KE_dAD',
-         'WV_dAR', 'WL_dAR', 'WI_dAR', 'SE_dAR', 'KE_dAR', 'WV_dBF', 'WL_dBF', 'WI_dBF', 'SE_dBF', 'KE_dBF'
+         'WL_pAP', 'WI_pAP', 'SE_pAP', 'KE_pAP', 'WV_pAM', 'WL_pAM', 'WI_pAM', 'SE_pAM', 'KE_pAM', 'WV_dED', 'WL_dED',
+         'WI_dED', 'SE_dED', 'KE_dED', 'WV_dAF', 'WL_dAF', 'WI_dAF', 'SE_dAF', 'KE_dAF', 'WV_dBD', 'WL_dBD', 'WI_dBD',
+         'SE_dBD', 'KE_dBD', 'WV_dAD', 'WL_dAD', 'WI_dAD', 'SE_dAD', 'KE_dAD', 'WV_dAR', 'WL_dAR', 'WI_dAR', 'SE_dAR',
+         'KE_dAR', 'WV_dBF', 'WL_dBF', 'WI_dBF', 'SE_dBF', 'KE_dBF', 'WV_dBH', 'WL_dBH', 'WI_dBH', 'SE_dBH', 'KE_dBH',
+         'WV_dCH', 'WL_dCH', 'WI_dCH', 'SE_dCH', 'KE_dCH', 'WV_dAH', 'WL_dAH', 'WI_dAH', 'SE_dAH', 'KE_dAH', 'WV_dBS',
+         'WL_dBS', 'WI_dBS', 'SE_dBS', 'KE_dBS', 'WV_dAS', 'WL_dAS', 'WI_dAS', 'SE_dAS', 'KE_dAS', 'WV_p2d', 'WL_p2d',
+         'WI_p2d', 'SE_p2d', 'KE_p2d', 'WV_PDC', 'WL_PDC', 'WI_PDC'
+ interpolate_nlat		= 96,96,96
+ interpolate_nlon		= 192,192,192
+ interpolate_output		= .true.,.false.,.true.
  ndens		= 2,1,2,2
  nhtfrq		= 1,1,0,0,0
 /
 &cam_initfiles_nl
- ncdata		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/inic/fv3/aqua_0006-01-01_C96_L32_c200625.nc'
+ ncdata		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/inic/se/ape_cam6_ne30np4_L32_c170509.nc'
  use_topo_file		= .false.
 /
 &check_energy_nl
@@ -41,7 +46,7 @@
 &chem_inparm
  chem_use_chemtrop		= .true.
  depvel_lnd_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/dvel/regrid_vegetation_all_zero_aquaplanet_1deg_regularGrid_c20170421.nc'
- drydep_srf_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mam/atmsrf_C96_c200625.nc'
+ drydep_srf_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mam/atmsrf_ne30pg3_180522.nc'
  exo_coldens_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/phot/exo_coldens.nc'
  ext_frc_cycle_yr		= 2000
  ext_frc_specifier		= ""
@@ -86,7 +91,7 @@
  cldfrc_rhminh		=  0.800D0 
  cldfrc_rhminl		=  0.950D0 
  cldfrc_rhminl_adj_land		=  0.000D0 
- cldfrc_sh1		=  0.07D0 
+ cldfrc_sh1		=  0.04D0 
  cldfrc_sh2		=  500.0D0 
 /
 &clubb_his_nl
@@ -105,7 +110,7 @@
  clubb_c1		=  1.0     
  clubb_c11		=  0.7D0   
  clubb_c11b		=  0.35D0  
- clubb_c14		=  2.2D0   
+ clubb_c14		=  1.6D0   
  clubb_c1b		=  1.0     
  clubb_c2rt		=  1.0     
  clubb_c2rtthl		=  1.3     
@@ -120,7 +125,7 @@
  clubb_c_k9		=  0.25    
  clubb_c_wp2_splat		=  0.0     
  clubb_do_liqsupersat		=  .false. 
- clubb_gamma_coef		=  0.308   
+ clubb_gamma_coef		=  0.270   
  clubb_gamma_coefb		=  0.32    
  clubb_l_brunt_vaisala_freq_moist		=  .false. 
  clubb_l_call_pdf_closure_twice		=  .true.  
@@ -163,71 +168,46 @@
  conv_water_in_rad		=  1 
 /
 &dust_nl
- dust_emis_fact		= 0.35D0
+ dust_emis_fact		= 0.70D0
  soil_erod_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/dst/dst_source2x2tunedcam6-2x2-04062017.nc'
 /
-&dyn_fv3_inparm
- fv3_lcp_moist		=  .true.   
- fv3_lcv_moist		=  .false.  
- fv3_scale_ttend		=  .false.   
-/
-&fms_nml
- fv3_clock_grain		= 'LOOP'
- fv3_domains_stack_size		= 6000000
- fv3_print_memory_usage		= .true.
- fv3_stack_size		= 6000000
-/
-&fv_core_nml
- fv3_adjust_dry_mass		=  .false.   
- fv3_beta		=  0         
- fv3_consv_am		=  .false.   
- fv3_consv_te		=  0         
- fv3_d2_bg		=  0         
- fv3_d2_bg_k1		=  0.15D0   
- fv3_d2_bg_k2		=  0.02D0   
- fv3_d4_bg		=  0.15D0   
- fv3_d_con		=  0         
- fv3_d_ext		=  0         
- fv3_dddmp		=  0.0D0     
- fv3_delt_max		=  0.0D0     
- fv3_dnats		=  0         
- fv3_do_sat_adj		=  .false.   
- fv3_do_vort_damp		=  .false.   
- fv3_dwind_2d		=  .false.   
- fv3_fill		=  .true.    
- fv3_fv_debug		=  .false.   
- fv3_fv_sg_adj		=  0         
- fv3_grid_type		=  0         
- fv3_hord_dp		=  -10        
- fv3_hord_mt		=  10         
- fv3_hord_tm		=  10         
- fv3_hord_tr		=  8          
- fv3_hord_vt		=  10         
- fv3_hydrostatic		=  .true.    
- fv3_k_split		=  2         
- fv3_ke_bg		=  0         
- fv3_kord_mt		=  9         
- fv3_kord_tm		=  -9        
- fv3_kord_tr		=  9         
- fv3_kord_wz		=  9         
- fv3_layout		= 8,8
- fv3_make_nh		=  .false.   
- fv3_n_split		=  6         
- fv3_n_sponge		=  0         
- fv3_na_init		=  0         
- fv3_ncnst		= 33
- fv3_no_dycore		=  .false.   
- fv3_nord		=  3         
- fv3_npx		=  97        
- fv3_npy		=  97        
- fv3_npz		= 32
- fv3_ntiles		=  6         
- fv3_nwat		=  5         
- fv3_print_freq		=  1         
- fv3_range_warn		=  .false.   
- fv3_rf_cutoff		=  750       
- fv3_tau		=  10        
- fv3_vtdm4		=  0.0D0       
+&dyn_se_inparm
+ se_ftype		=  2 
+ se_fv_nphys		= 3
+ se_fvm_supercycling		= -1
+ se_fvm_supercycling_jet		= -1
+ se_horz_num_threads		=  0 
+ se_hypervis_dynamic_ref_state		=  .false.  
+ se_hypervis_subcycle		=  3 
+ se_hypervis_subcycle_q		= 1                 
+ se_hypervis_subcycle_sponge		=  1  
+ se_kmax_jet		= -1
+ se_kmin_jet		= -1
+ se_large_courant_incr		=  .true.  
+ se_lcp_moist		=  .true.  
+ se_limiter_option		=  8 
+ se_molecular_diff		=   0.0 
+ se_ne		= 30
+ se_nsplit		=                    2 
+ se_nu		= -1
+ se_nu_div		=  -1 
+ se_nu_p		= -1 
+ se_nu_top		=  5.0e5 
+ se_phys_dyn_cp		= 1
+ se_qsplit		=  1 
+ se_rayk0		=   2    
+ se_raykrange		=   0.5  
+ se_raytau0		=   0.0 
+ se_refined_mesh		=  .false. 
+ se_rsplit		=  3 
+ se_statediag_numtrac		= 3
+ se_statefreq		= 144
+ se_tracer_num_threads		=  0 
+ se_tstep_type		=  4 
+ se_vert_num_threads		=  0 
+ se_vert_remap_t		= 'thermal_energy_over_P'
+ se_vert_remap_tracer_alg		= 'PPM_bc_linear_extrapolation'
+ se_vert_remap_uvtq_alg		= 'FV3_CS'
 /
 &gw_drag_nl
  fcrit2		= 1.0
@@ -315,7 +295,7 @@
  gravit		= 9.79764
  mwdry		= 28.96623324623746
  mwh2o		= 18.01618112892741
- rearth		= 6.37122D6
+ rearth		= 6.37100e6
  sday		= 86164.10063718943
 /
 &prescribed_ozone_nl
@@ -382,7 +362,7 @@
 &zmconv_nl
  zmconv_c0_lnd		=  0.0075D0 
  zmconv_c0_ocn		=  0.0300D0 
- zmconv_ke		=  3.0E-6 
+ zmconv_ke		=  5.0E-6 
  zmconv_ke_lnd		=  1.0E-5 
  zmconv_microp		=  .false. 
  zmconv_momcd		=  0.7000D0 

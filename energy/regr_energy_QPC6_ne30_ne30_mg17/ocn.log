@@ -44,7 +44,7 @@
 (docn_comp_run)  writing regr_energy_QPC6_ne30_ne30_mg17.docn.rs1.0001-01-01-03600.bin   10101    3600s
 (shr_stream_restWrite) case name        : regr_energy_QPC6_ne30_ne30_mg17
 (shr_stream_restWrite) case description : SDOCN strdata
-(shr_stream_restWrite) File created     : 2021-04-23 08:34:09
+(shr_stream_restWrite) File created     : 2021-04-26 08:47:48
 (shr_stream_restWrite) Number of streams     0
 (docn_comp_run) ocn: model date    10101    3600s
  run diag:AV

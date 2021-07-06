@@ -2,59 +2,59 @@
 (seq_mct_drv) MCT_INTERFACE is set
 (esmf_readnl) 
  read esmf_inparm namelist from: drv_in
- CPL              : pio_numiotasks =           10
+ CPL              : pio_numiotasks =           12
  CPL              : pio_stride =           36
  CPL              : pio_rearranger =            1
  CPL              : pio_root =            1
  CPL              : pio_iotype =            5
- ATM              : pio_numiotasks =           10
+ ATM              : pio_numiotasks =           12
  ATM              : pio_stride =           36
  ATM              : pio_rearranger =            1
  ATM              : pio_root =            1
  ATM              : pio_iotype =            5
- LND              : pio_numiotasks =           10
+ LND              : pio_numiotasks =           12
  LND              : pio_stride =           36
  LND              : pio_rearranger =            1
  LND              : pio_root =            1
  LND              : pio_iotype =            5
- OCN              : pio_numiotasks =           10
+ OCN              : pio_numiotasks =           12
  OCN              : pio_stride =           36
  OCN              : pio_rearranger =            1
  OCN              : pio_root =            1
  OCN              : pio_iotype =            5
- ICE              : pio_numiotasks =           10
+ ICE              : pio_numiotasks =           12
  ICE              : pio_stride =           36
  ICE              : pio_rearranger =            1
  ICE              : pio_root =            1
  ICE              : pio_iotype =            5
- GLC              : pio_numiotasks =           10
+ GLC              : pio_numiotasks =           12
  GLC              : pio_stride =           36
  GLC              : pio_rearranger =            1
  GLC              : pio_root =            1
  GLC              : pio_iotype =            5
- ROF              : pio_numiotasks =           10
+ ROF              : pio_numiotasks =           12
  ROF              : pio_stride =           36
  ROF              : pio_rearranger =            1
  ROF              : pio_root =            1
  ROF              : pio_iotype =            5
- WAV              : pio_numiotasks =           10
+ WAV              : pio_numiotasks =           12
  WAV              : pio_stride =           36
  WAV              : pio_rearranger =            1
  WAV              : pio_root =            1
  WAV              : pio_iotype =            5
- IAC              : pio_numiotasks =           10
+ IAC              : pio_numiotasks =           12
  IAC              : pio_stride =           36
  IAC              : pio_rearranger =            1
  IAC              : pio_root =            1
  IAC              : pio_iotype =            5
  ESP              : pio_numiotasks =            4
- ESP              : pio_stride =           96
+ ESP              : pio_stride =          112
  ESP              : pio_rearranger =            1
  ESP              : pio_root =            1
  ESP              : pio_iotype =            6
 8 MB memory   alloc in MB is             8.00
-8 MB memory dealloc in MB is             7.80
-Memory block size conversion in bytes is          1001.51
+8 MB memory dealloc in MB is             7.82
+Memory block size conversion in bytes is          1004.38
 (seq_infodata_Init) 
  read seq_infodata_inparm namelist from: drv_in
 (shr_orb_params) Calculate characteristics of the orbit:
@@ -77,7 +77,7 @@ Memory block size conversion in bytes is          1001.51
 (seq_mct_drv) : ------------------------------------------------------------
 (seq_mct_drv) :                      MODEL cesm
 (seq_mct_drv) : ------------------------------------------------------------
-(seq_mct_drv) :                 DATE 04/23/21 TIME 12:46:15
+(seq_mct_drv) :                 DATE 04/26/21 TIME 09:07:51
 (seq_mct_drv) : ------------------------------------------------------------
   
   
@@ -763,10 +763,10 @@ Memory block size conversion in bytes is          1001.51
   
 (component_init_cx) : creating gsmap_cx for atm
 (seq_mctext_gsmapCreate) created new gsmap decomp_type =       2
-(seq_mctext_gsmapCreate)   ngseg/gsize        =    55296   55296
-(seq_mctext_gsmapCreate)   mpisize/active_pes =      384     384
-(seq_mctext_gsmapCreate)   avg seg per pe/ape =      144     144
-(seq_mctext_gsmapCreate)   nlseg/maxnlsegs    =      144     144
+(seq_mctext_gsmapCreate)   ngseg/gsize        =     1808   48600
+(seq_mctext_gsmapCreate)   mpisize/active_pes =      450     450
+(seq_mctext_gsmapCreate)   avg seg per pe/ape =        4       4
+(seq_mctext_gsmapCreate)   nlseg/maxnlsegs    =        5       5
 (component_init_cx) : Initializing mapper_Ca2x       1
 (seq_map_init_rearrsplit)  gsmaps are not identical
 (seq_map_init_rearrsplit)  mapper counter, strategy, mapfile =      1 rearrange undefined
@@ -777,8 +777,8 @@ Memory block size conversion in bytes is          1001.51
   
 (component_init_cx) : creating gsmap_cx for ocn
 (seq_mctext_gsmapCreate) created new gsmap decomp_type =       2
-(seq_mctext_gsmapCreate)   ngseg/gsize        =      384   55296
-(seq_mctext_gsmapCreate)   mpisize/active_pes =      384     384
+(seq_mctext_gsmapCreate)   ngseg/gsize        =      450   48600
+(seq_mctext_gsmapCreate)   mpisize/active_pes =      450     450
 (seq_mctext_gsmapCreate)   avg seg per pe/ape =        1       1
 (seq_mctext_gsmapCreate)   nlseg/maxnlsegs    =        1       1
 (component_init_cx) : Initializing mapper_Co2x       1
@@ -845,11 +845,11 @@ Memory block size conversion in bytes is          1001.51
 (seq_mct_drv) : iac_c2_atm            =      F
 (seq_mct_drv) : dead components       =      F
 (seq_mct_drv) : domain_check          =      T
-(seq_mct_drv) : atm_nx,atm_ny         =    55296       1   C96
+(seq_mct_drv) : atm_nx,atm_ny         =    48600       1   ne30np4.pg3
 (seq_mct_drv) : lnd_nx,lnd_ny         =        0       0   null
 (seq_mct_drv) : rof_nx,rof_ny         =        0       0   null
-(seq_mct_drv) : ice_nx,ice_ny         =        0       0   C96
-(seq_mct_drv) : ocn_nx,ocn_ny         =    55296       1   C96
+(seq_mct_drv) : ice_nx,ice_ny         =        0       0   ne30np4.pg3
+(seq_mct_drv) : ocn_nx,ocn_ny         =    48600       1   ne30np4.pg3
 (seq_mct_drv) : glc_nx,glc_ny         =        0       0   null
 (seq_mct_drv) : wav_nx,wav_ny         =        0       0   null
 (seq_mct_drv) : iac_nx,iac_ny         =        0       0   null
@@ -893,14 +893,14 @@ Memory block size conversion in bytes is          1001.51
 (seq_mct_drv) : Performing domain checking
 (seq_domain_check)  --- checking ocean maskfrac ---
 (seq_domain_check)  --- checking atm/ocn domains ---
-(seq_domain_check_grid)  the domain size is =          144
-(seq_domain_check_grid)  maximum           difference for lat  0.156319401867222E-12
+(seq_domain_check_grid)  the domain size is =          126
+(seq_domain_check_grid)  maximum           difference for lat  0.142108547152020E-13
 (seq_domain_check_grid)  maximum allowable difference for lat  0.100000000000000E-11
-(seq_domain_check_grid)  the domain size is =          144
-(seq_domain_check_grid)  maximum           difference for lon  0.227373675443232E-12
+(seq_domain_check_grid)  the domain size is =          126
+(seq_domain_check_grid)  maximum           difference for lon  0.568434188608080E-13
 (seq_domain_check_grid)  maximum allowable difference for lon  0.100000000000000E-11
-(seq_domain_check_grid)  the domain size is =          144
-(seq_domain_check_grid)  maximum           difference for area  0.177261634190518E-14
+(seq_domain_check_grid)  the domain size is =          126
+(seq_domain_check_grid)  maximum           difference for area  0.266415578834001E-15
 (seq_domain_check_grid)  maximum allowable difference for area  0.900000000000000E-06
 (seq_domain_check)  --- checking fractions in domains ---
 (seq_domain_check)  maximum           difference for ofrac sum    0.00000000000000    
@@ -909,8 +909,8 @@ Memory block size conversion in bytes is          1001.51
 (seq_domain_check)  maximum allowable tolerance for valid frac   0.100000000000000E-01
 (seq_domain_areafactinit) : min/max mdl2drv    1.00000000000000       1.00000000000000    areafact_a_ATM
 (seq_domain_areafactinit) : min/max drv2mdl    1.00000000000000       1.00000000000000    areafact_a_ATM
-(seq_domain_areafactinit) : min/max mdl2drv   0.999999999989436       1.00000000000760    areafact_o_OCN
-(seq_domain_areafactinit) : min/max drv2mdl   0.999999999992404       1.00000000001056    areafact_o_OCN
+(seq_domain_areafactinit) : min/max mdl2drv   0.999999999998864       1.00000000000088    areafact_o_OCN
+(seq_domain_areafactinit) : min/max drv2mdl   0.999999999999123       1.00000000000114    areafact_o_OCN
   
 (seq_mct_drv) : Initializing fractions
 (seq_frac_check) [ocn init] afrac min/max   =    1.00000000000000000       1.00000000000000000    
@@ -966,39 +966,39 @@ Memory block size conversion in bytes is          1001.51
   
 (seq_mct_drv) : Model initialization complete 
   
- memory_write: model date =   00010101       0 memory =  196063.32 MB (highwater)        297.50 MB (usage)  (pe=    0 comps= cpl ATM LND ICE OCN GLC WAV IAC ESP)
+ memory_write: model date =   00010101       0 memory =  260084.22 MB (highwater)        289.08 MB (usage)  (pe=    0 comps= cpl ATM LND ICE OCN GLC WAV IAC ESP)
  Write restart file at   00010101    3600
 (seq_rest_write)  write rpointer file rpointer.drv
  (seq_io_wopen)  create file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
- Restart filename: regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
-(seq_mct_drv) Reading restart (resume) file regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
+ Restart filename: regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
+(seq_mct_drv) Reading restart (resume) file regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
  (seq_io_read_avs)  open file 
- regr_energy_QPC6_C96_C96_mg17.cpl.r.0001-01-01-03600.nc
+ regr_energy_QPC6_ne30pg3_ne30pg3_mg17.cpl.r.0001-01-01-03600.nc
 
 
 
 (seq_mct_drv): ===============          SUCCESSFUL TERMINATION OF CPL7-cesm ===============
 (seq_mct_drv): ===============        at YMD,TOD =   00010101    3600       ===============
 (seq_mct_drv): ===============  # simulated days (this run) =        0.042  ===============
-(seq_mct_drv): ===============  compute time (hrs)          =        0.002  ===============
-(seq_mct_drv): ===============  # simulated years / cmp-day =        1.575  ===============
-(seq_mct_drv): ===============  pes min memory highwater  (MB)  130983.992  ===============
-(seq_mct_drv): ===============  pes max memory highwater  (MB)  196452.227  ===============
-(seq_mct_drv): ===============  pes min memory last usage (MB)     286.777  ===============
-(seq_mct_drv): ===============  pes max memory last usage (MB)     648.797  ===============
+(seq_mct_drv): ===============  compute time (hrs)          =        0.001  ===============
+(seq_mct_drv): ===============  # simulated years / cmp-day =        2.070  ===============
+(seq_mct_drv): ===============  pes min memory highwater  (MB)  130368.414  ===============
+(seq_mct_drv): ===============  pes max memory highwater  (MB)  260407.984  ===============
+(seq_mct_drv): ===============  pes min memory last usage (MB)     307.488  ===============
+(seq_mct_drv): ===============  pes max memory last usage (MB)     597.430  ===============
 
 
 

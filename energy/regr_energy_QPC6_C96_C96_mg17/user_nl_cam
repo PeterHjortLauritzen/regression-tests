@@ -1,6 +1,10 @@
 ! Users should add all user specific namelist changes below in the form of 
 ! namelist_var = new_namelist_value 
  
+se_statefreq       = 144
+interpolate_output = .true.,.false.,.true.
+interpolate_nlat   = 96 , 96, 96
+interpolate_nlon   = 192,192,192
 avgflag_pertape(1) = 'I'
 avgflag_pertape(2) = 'I'
 avgflag_pertape(3) = 'I'
@@ -8,16 +12,20 @@ nhtfrq             = 1,1,0,0,0
 empty_htapes       = .true.
 ndens              = 2,1,2,2                                            
 fincl1 = 'TEINP','TEOUT','TEFIX','EFIX','DTCORE','PS','U','T','Q','PRECT','OMEGA500'
- fincl2 =  'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',
-           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',
-           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',
-           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',
-           'WV_zBF','WL_zBF','WI_zBF','SE_zBF','KE_zBF',  
-           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  
-           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  
-           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM' 
-           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',
-           'WV_dAF','WL_dAF','WI_dAF','SE_dAF','KE_dAF',
-           'WV_dAD','WL_dAD','WI_dAD','SE_dAD','KE_dAD',
-           'WV_dAR','WL_dAR','WI_dAR','SE_dAR','KE_dAR',
-           'WV_dBF','WL_dBF','WI_dBF','SE_dBF','KE_dBF' 
+fincl2 =   'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',  
+           'WV_pBP','WL_pBP','WI_pBP','SE_pBP','KE_pBP',  
+           'WV_pAP','WL_pAP','WI_pAP','SE_pAP','KE_pAP',  
+           'WV_pAM','WL_pAM','WI_pAM','SE_pAM','KE_pAM',  
+           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',  
+           'WV_dAF','WL_dAF','WI_dAF','SE_dAF','KE_dAF',  
+           'WV_dBD','WL_dBD','WI_dBD','SE_dBD','KE_dBD',  
+           'WV_dAD','WL_dAD','WI_dAD','SE_dAD','KE_dAD',  
+           'WV_dAR','WL_dAR','WI_dAR','SE_dAR','KE_dAR',  
+           'WV_dBF','WL_dBF','WI_dBF','SE_dBF','KE_dBF',  
+           'WV_dBH','WL_dBH','WI_dBH','SE_dBH','KE_dBH',  
+           'WV_dCH','WL_dCH','WI_dCH','SE_dCH','KE_dCH',  
+           'WV_dAH','WL_dAH','WI_dAH','SE_dAH','KE_dAH',  
+           'WV_dBS','WL_dBS','WI_dBS','SE_dBS','KE_dBS',  
+           'WV_dAS','WL_dAS','WI_dAS','SE_dAS','KE_dAS',  
+           'WV_p2d','WL_p2d','WI_p2d','SE_p2d','KE_p2d',  
+           'WV_PDC','WL_PDC','WI_PDC'      

@@ -1,6 +1,6 @@
 
 #!/bin/tcsh
-if ( "$#argv" != 1) then
+if ( "$#argv" != 3) then
   echo "Wrong number of arguments specified:"
   echo "  -arg 1 res"
   echo "supported resolutions/dycores are"
@@ -9,19 +9,23 @@ if ( "$#argv" != 1) then
   echo "fv3     : C96_C96_mg17"
   echo "fv      : f09_f09_mg17"
   echo "mpas    : mpasa120_mpasa120"
+  echo ""
+  echo "  -arg 2 src"
+  echo "full path to source code"
+  echo ""
+  echo "  -arg 3 src short name"
+  echo " "
 endif
 set n = 1
 unset res
 set res = "$argv[$n]" 
-#
-# source code (assumed to be in /glade/u/home/$USER/src)
-#
-#if ($res == "ne30_ne30_mg17" || $res == "ne30pg3_ne30pg3_mg17" || $res == "f09_f09_mg17") then
-#  set src="CESM2.2-updates"
-#else
-set src="mpas_fixes"
-#set src="cam_development"
-#endif
+set n = 2
+unset src
+set src = "$argv[$n]" 
+set n = 3
+unset source_short_name
+set source_short_name = "$argv[$n]" 
+
 #
 # number of test tracers
 #
@@ -47,8 +51,10 @@ source machine_settings.sh startup
 set PBS_ACCOUNT="P93300642"
 echo $PBS_ACCOUNT
 
-set caze=regr_energy_${cset}_${res}
-$homedir/$USER/src/$src/cime/scripts/create_newcase --case $scratch/$USER/$caze --compset $cset --res $res  --q $queue --walltime $walltime --pecount $pecount  --project $PBS_ACCOUNT --compiler $compiler --run-unsupported
+set caze=regr_${cset}_${res}_${source_short_name}
+$src/cime/scripts/create_newcase --case $scratch/$USER/$caze --compset $cset --res $res  --q $queue --walltime $walltime --pecount $pecount  --project $PBS_ACCOUNT --compiler $compiler --run-unsupported
+#$homedir/$USER/src/$src/cime/scripts/create_newcase --case $scratch/$USER/$caze --compset $cset --res $res  --q $queue --walltime $walltime --pecount $pecount  --project $PBS_ACCOUNT --compiler $compiler --run-unsupported
+#/glade/scratch/pel/cam_mpas_dev_pel/cime/scripts/create_newcase --case $scratch/$USER/$caze --compset $cset --res $res  --q $queue --walltime $walltime --pecount $pecount  --project $PBS_ACCOUNT --compiler $compiler --run-unsupported
 
 cd $scratch/$USER/$caze
 ./xmlchange STOP_OPTION=$stopoption,STOP_N=$steps
@@ -79,11 +85,11 @@ if ($res == "mpasa120_mpasa120") then
   endif
 endif
 
-if ($res == "mpasa120_mpasa120") then
-    if ($cset == "QPC6") then
-      echo "drydep_srf_file = '/glade/p/cesmdata/inputdata/atm/cam/chem/trop_mam/atmsrf_mpasa120_c090720.nc'"    >> user_nl_cam
-    endif
-endif
+#if ($res == "mpasa120_mpasa120") then
+#    if ($cset == "QPC6") then
+#      echo "drydep_srf_file = '/glade/p/cesmdata/inputdata/atm/cam/chem/trop_mam/atmsrf_mpasa120_c090720.nc'"    >> user_nl_cam
+#    endif
+#endif
 
 if ($stopoption == "nmonths") then
   echo "avgflag_pertape(1) = 'A'" >> user_nl_cam
@@ -141,12 +147,12 @@ if ( $res == "mpasa120_mpasa120") then
   echo "           'WV_zBP','WL_zBP','WI_zBP','SE_zBP','KE_zBP',  ">> user_nl_cam
   echo "           'WV_zAP','WL_zAP','WI_zAP','SE_zAP','KE_zAP',  ">> user_nl_cam
   echo "           'WV_zAM','WL_zAM','WI_zAM','SE_zAM','KE_zAM',  ">> user_nl_cam
-  echo "         'WV_dDP','SE_dDP','KE_dDP',  ">> user_nl_cam
-  echo "         'WV_dPD','SE_dPD','KE_dPD',  ">> user_nl_cam
-  echo "         'WV_dDM','SE_dDM','KE_dDM',  ">> user_nl_cam
-  echo "         'WV_dBD','SE_dBD','KE_dBD',  ">> user_nl_cam
-  echo "         'WV_dED','SE_dED','KE_dED',  ">> user_nl_cam
-  echo "         'WV_dBF','SE_dBF','KE_dBF'   ">> user_nl_cam
+  echo "           'WV_dDP','WL_dDP','WI_dDP','SE_dDP','KE_dDP',  ">> user_nl_cam
+  echo "           'WV_dPD','WL_dPD','WI_dPD','SE_dPD','KE_dPD',  ">> user_nl_cam
+  echo "           'WV_dDM','WL_dDM','WI_dDM','SE_dDM','KE_dDM',  ">> user_nl_cam
+  echo "           'WV_dBD','WL_dBD','WI_dBD','SE_dBD','KE_dBD',  ">> user_nl_cam
+  echo "           'WV_dED','WL_dED','WI_dED','SE_dED','KE_dED',  ">> user_nl_cam
+  echo "           'WV_dBF','WL_dBF','WI_dBF','SE_dBF','KE_dBF'   ">> user_nl_cam
 endif
 if ($res == "C96_C96_mg17") then
   echo " fincl2 =  'WV_pBF','WL_pBF','WI_pBF','SE_pBF','KE_pBF',">> user_nl_cam
